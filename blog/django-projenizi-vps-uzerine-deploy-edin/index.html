@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+  <title>Django projenizi VPS üzerine deploy edin! | codex</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="database , Django , gunicorn , nginx , postgresql , supervisor , veritabanı , vps , web framework , web programming">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Django projenizi VPS üzerine deploy edin!" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@sogukpinarugur" />
+  <meta name="twitter:creator" content="https://twitter.com/sogukpinarugur" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ugursogukpinar.com"
+      },
+      "articleSection" : "blog",
+      "name" : "Django projenizi VPS üzerine deploy edin!",
+      "headline" : "Django projenizi VPS üzerine deploy edin!",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2015",
+      "datePublished": "2015-07-06 11:41:00 \u002b0300 EEST",
+      "dateModified" : "2015-07-06 11:41:00 \u002b0300 EEST",
+      "url" : "https:\/\/ugursogukpinar.com\/blog\/django-projenizi-vps-uzerine-deploy-edin\/",
+      "wordCount" : "1265",
+      "keywords" : ["database", "Django", "gunicorn", "nginx", "postgresql", "supervisor", "veritabanı", "vps", "web framework", "web programming", "Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Django projenizi VPS üzerine deploy edin!</h1>
+            <time datetime="2015-07-06 11:41:00 &#43;0300 EEST" class="post__date">Jul 6 2015</time> 
+          </header>
+          <article class="post__content">
+              
+<p>Django&rsquo;nun en güzel özelliklerinden biri şüphesiz development servera sahip olması. Şahsen iş yerinde PHP kullanan biri olarak , geliştirme ortamınızı ayarlamak zorundasınız. Örneğin bir apache server ya da bir nginx server kurulumunu yapmak , gerekli PHP paketlerini yüklemek zorundasınız. Django&rsquo;da ise , django kurulduktan sonra tek bir satır kod ile projeyi servis etme şansınız var. Ancak bu durum tabi ki geliştirme süreci için geçerli. Projenizi yayına almak istediğiniz zaman elimizi biraz taşın altına sokuyoruz. Başlamadan evvel sahip olmanız gereken şeyler ;</p>
+<ol>
+<li>VPS. Ben bunun için <a href="http://digitalocean.com" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>digitalocean</a>
+ &lsquo;dan açtığım makineyi kullanıyorum. Fiyatı öğrenci arkadaşlar için uygundur.</li>
+<li>Domain Aslında domain sahibi olmasanız da olur , makinenizin ip adresini kullanarak da sonuçları görebilirsiniz. Ancak domain sahibiyseniz, DNS ayarlarınızın doğru olduğundan emin olun. Bunların dışında kurulum sırasında gunicorn, supervisor, nginx ve virtualenv araçlarını kullanacağım. Ayrıca veritabanı postgresql kullanacağım. Her birini arama motorlarında aratarak kullanımlarını öğrenebilirsiniz. Ben bizim için gerekli olan kısımları açıklayacağım. Başlamadan evvel aşağıdaki komutlarla depoları güncellemekte fayda var.</li>
+</ol>
+<!-- -->
+<pre><code>$ sudo apt-get update
+$ sudo apt-get upgrade
+</code></pre>
+<p>Bu işlemden sonra postgresql&rsquo;in kurulumunu yapalım.</p>
+<pre><code>$ sudo apt-get install postgresql postgresql-contrib
+</code></pre>
+<p>Kurulumdan sonra yeni bir kullanıcı ve veritabanı oluşturalım.  </p>
+<pre><code>$sudo su - postgres
+postgres@MyDroplet:~$ createuser --interactive -P
+Enter name of role to add:   django_db_user
+Enter password for new role:
+Enter it again:
+</code></pre>
+<p>Bu işlemden sonra size sorulan soruların tamamına hayır (n) diyebilirsiniz. Daha sonra ise yeni bir veritabanı oluşturalım.  </p>
+<pre><code>postgres@MyDroplet:~$ createdb --owner django_db_user hello_django
+postgres@MyDroplet:~$ logout
+</code></pre>
+<p>Bu durumda veritabanımızın kullanıcısı django_db_user , veritabanımız ise hello_django olarak ayarlanıyor. Bu işlemden sonra virtualenv ortamını ayarlayalım. Virtualenv makine üzerine kuracağınız paketleri sanal bir ortama kurmak için kullanılır. Örnek vermek gerekirse elinizde 2 farklı Django ile yazılmış bir web projesi olduğunu ve bunların farklı sürümlerde çalıştığını hayal edin. Bu durumda iki adet virtualenv oluşturup her birine gereken sürümü yükleyebilir birbiriyle çakışmadan çalışmasını sağlayabilirsiniz.</p>
+<pre><code>$ sudo apt-get install python-virtualenv
+</code></pre>
+<p>Virtualenv kurduktan sonra bir tane oluşturmak için ;</p>
+<pre><code>$ sudo virtualenv /opt/myenv
+</code></pre>
+<p>Bu komut /opt/myenv dizinine bir virtualenv oluşturacaktır. Dediğimiz gibi makineye kuracağınız paketleri bu virtualenv ortamına kurmanız gerek. Dolayısıyla önce virtualenv ortamına geçiş yapmalısınız. Bunun için ;</p>
+<pre><code>$ source /opt/myenv/bin/activate
+</code></pre>
+<p>Komutunu kullanmalısınız. Bu ortamdan çıkış yapmak için ise ;</p>
+<pre><code>$ deactivate
+</code></pre>
+<p>komutu yeterli olacaktır. Virtualenv ortamına geçiş yaptıktan sonra,</p>
+<pre><code>$ pip install django
+</code></pre>
+<p>komutu ile django kurulumunu gerçekleştirebilirsiniz. Bu işlemden sonra virtualenv ortamından çıkıp. Nginx kurulumunu gerçekleştirebiliriz.</p>
+<pre><code>$ sudo apt-get install nginx
+</code></pre>
+<p>komutu bu konuda problemlerinizi tamamıyla çözecektir. Parçaları ayrı ayrı kurmamıza aldırmayın, birazdan bütün bu parçaları bir araya getireceğiz. Nginx web projenizi servis etmeniz için bir konteynır biz nginx ile django projesini konuşturmak için arada gunicorn dediğimiz yazılımı kullanacağız. Bu sebeple virtualenv ortamına geçip, gunicorn kurulumunu yapmalıyız.</p>
+<pre><code>$ pip install gunicorn
+</code></pre>
+<p>komutu ile gunicorn kurulumunu gerçekleştirelim. Aslında gunicorn ile tek başına django projesini servis edebiliriz. Ancak ortada bir django projesi yok! Öncelikle bir django projesi oluşturalım ve veritabanı bağlantısı için gerekli ayarları düzenleyelim. Tabi ki virtualenv ortamındayken - çünkü djangoyu bu virtualenv ortamında kurduk, bu ortam dışında django-admin.py&rsquo;yi çalıştırmak isterseniz hata alırsınız-</p>
+<pre><code>$ cd /opt/myenv
+$ django-admin.py startproject hello_django
+</code></pre>
+<p>komutları ile projemizi /opt/myenv dizini altına hello_django ismiyle oluşturalım. Postgresql kurulumunu yaptık ancak python&rsquo;un postgresql ile anlaşabilmesi için psycopg2 isimli bir kütüphaneye ihtiyacı var. Bu kütüphaneyi kurmak için de;</p>
+<pre><code>$ pip install psycopg2
+</code></pre>
+<p>komutunu yazıyoruz. Şimdi projenin içinde (/opt/myenv/hello_django/hello_django/) settings.py dosyasını düzenleyip veritabanı bağlantısını gerçekleştirelim.</p>
+<pre><code>DATABASES = {
+'default': {
+'ENGINE': 'django.db.backends.postgresql_psycopg2',
+'NAME': 'hello_django',
+'USER': 'django_db_user',
+'PASSWORD': '********',
+'HOST': 'localhost',
+'PORT': '',
+}
+</code></pre>
+<p>Yukardaki ayarları yaptıktan sonra tablolarımızı ilklendirebiliriz.Bunlar django ile ilgili olduğu için pek üstünde durmaya gerek yok.</p>
+<pre><code>$ cd /opt/myenv/hello_django
+$ python manage.py syncdb
+</code></pre>
+<p>Şu ana kadar birşeyi atlamadıysanız veya bir kurulumda hata almadıysanız tablolarınız daha önceden açtığımız veritabanında işlenmiş olmalı. Postgresql dökümantasyonlarına bakarak gerekli kontrolleri yapabilirsiniz. Söylediğim gibi aslında gunicorn ile projeyi tek başına servis edebilirsiniz. Gelin isterseniz gunicorn ile bir test yapalım.</p>
+<pre><code>$ cd /opt/myenv/hello_django
+$ gunicorn hello_django.wsgi --bind 0.0.0.0:8000 --worker 3
+</code></pre>
+<p>komutlarıyla projenizi tıpkı <code>$ python manage.py runserver</code> der gibi servis edebilirsiniz. Şimdi makinenin ip&rsquo;sini kullanarak(xxx.xxx.xx.xxx:8000 gibi) tarayıcıdan erişmeye çalışırsanız, karşınıza bir web sayfasının çıktığını görebilirsiniz. Static dosyalar görünmüyorsa , şimdilik kafanıza takmanıza gerek yok. Ancak fark ettiyseniz projeyi gunicorn ile servis ederken bind veya worker gibi belli parametreler kullandık. Bu parametreleri komut satırı üzerinden vermek yerine bir python dosyasına yazarak verebiliriz. Gelin bir konfigurasyon dosyası oluşturalım ve projeyi başlatmak istediğimizde hep bunu kullanalım.</p>
+<pre><code>$ cd /opt/myenv
+$ sudo vi hello_django_gunicorn_cfg.py
+
+ command = '/opt/myenv/bin/gunicorn' 
+ pythonpath = '/opt/myenv/hello_django' 
+ bind = '127.0.0.1:8001' 
+ workers = 3 
+ user = nobody
+</code></pre>
+<p>Burda user yerine nobody değeri geçildi, burada user parametresi geçmeyebilirsiniz. Ancak sağlıklı bir web uygulamasının unix kullanıcısı ayrı ve hakları kısıtlıdır. Bu güvenlik açısından önemli bir noktadır. Dolayısıyla unix üzerinde bir servis kullanıcısı açmanızı , projenin dosya haklarını bu kullanıcıya vermenizi, gunicorn config dosyasına ise bu kullanıcının adını yazmanızı tavsiye ederim. Ufak bir tüyo ile linux üzerinde şu komutla bir kullanıcı açabilirsiniz.</p>
+<pre><code>useradd --system --bash /bin/bash --home-dir /opt/myenv/hello_django hello_django_unix_user
+</code></pre>
+<p>Hatta daha sağlıklısı web uygulamalarının kullanıcılarını bir gruba atamak, örneğin webapps isminde bir gruba bu kullanıcıları dahil edebilir, gerekli unix yönetimini sağlayabilirsiniz. Ancak olayı şimdilik karıştırmaya gerek yok. Üstteki işlemi yaptıysanız hello_django_unix_user ismindeki kullanıcıyı config dosyasına yazabilirsiniz. Artık config dosyasını kullanarak projeyi başlatabilirsiniz. Virtualenv aktif haldeyken,</p>
+<pre><code>$ gunicorn -c /opt/myenv/hello_django_gunicorn_cfg.py hello_django.wsgi
+</code></pre>
+<p>komutu ile daha demin yaptığımız işlemi yapabiliriz. Bind ettiğimiz nokta farklı bir nokta olduğu için tarayıcıdan erişmeniz mümkün olmayabilir. Ancak bu ayarların yanına nginx i kattığımızda gunicorn kendi içinde 8001 portunda çalışan bir sunucu gibi olacak, nginx ise ön planda durup gelen istekleri gerekiyorsa gunicorna gönderecek. Statik olan dosyaları ise nginx ile servis edeceğiz. Nginx ayarlarını yapmadan önce statik dosyalar ile ilgili sorunlarımızı çözelim. Djangonun bu yönde güzel bir yanı var, kullandığınız bütün statik dosyaları tek bir noktaya toplayabiliyorsunuz. Bir django projesi oluşturduğunuzda admin paneli ile ilgili sayfaların dosyaları proje dosyaları içinde yer almaz, dolayısıyla projeyi taşıma esnasında sorunlar doğabilir. Bu nedenle django statik dosyaları tek bir noktaya taşımak için belirli yapılar geliştirmiş. Öncelikle statik dosyaların nerede toplanacağını djangoya söylememiz gerekiyor. Bunun için settings.py dosyasına aşağıdaki tanımlamayı yapmalıyız.</p>
+<pre><code>STATIC_ROOT = '/opt/myenv/hello_django_static'
+</code></pre>
+<p>Dikkat ettiyseniz virtualenv içerisinde ama proje dosyalarının dışında bir nokta seçtim. Bu iyi bir çözümdür. Virtualenv içerisine koyarsanız başka projelerle karışmaz, proje klasoru dışarısına koyarsanız hem güvenlidir, hemde versiyon kontrol sistemlerini ignore etmekle uğraştırmazsınız. Bu tanımlamayı yaptıktan sonra;</p>
+<pre><code>$ cd /opt/myenv/hello_django
+$ python manage.py collectstatic
+</code></pre>
+<p>komutu ile statik dosyalarınızı toparlayabilirsiniz. Bu işlemi yaptıktan sonra artık nginx ayarlarını yapmaya hazırız.</p>
+<pre><code>$ sudo vi /etc/nginx/sites-available/hello_django
+
+ server {   
+   server_name domain.com;
+   location /static/ {     
+     alias /opt/myenv/hello_django_static;   
+   }   
+   location / {     
+     proxy_pass http://127.0.0.1:8001
+     proxy_set_header X-Forwarded-Host $server_name;     
+     proxy_set_header X-Real-IP $remote_addr;
+     add_header P3P 'CP=&quot;ALL DSP COR PSAa PSDa OUR NOR ONL UNI COM NAV&quot;';   
+   }
+ }
+
+$ cd /etc/nginx/sites-enabled
+$ sudo ln -s ../sites-available/hello_django
+$ sudo service nginx restart
+</code></pre>
+<p>Bu işlemlerden sonra</p>
+<pre><code>$ cd /opt/myenv/
+$ gunicorn -c hello_django_gunicorn_cfg.py hello_django.wsgi
+</code></pre>
+<p>Diyerek gunicornu aktif ediyoruz ve domainimize girmeye çalışıyoruz. Bu aşamadan sonra projenizi düzgün bir şekilde görüyor olmalısınız. Ancak bir sorun var, tüm bunları runserver gibi bir komut çalıştırmadan otomatik olarak yapmak istiyorduk. Araya bir sürü yazılım soktuk ama bir adım ileri gidemedik gibi duruyor. Yapmamız gereken son iş elle yaptığımız bu tetikleme işlemini supervisor diye isimlendirilen bir yazılıma teslim etmek. Bu yazılım sayesinde kendi yazdığınız scriptleri arka planda, otomatik olarak çalıştırabilirsiniz. Bu programı kurmak için virtualenv dışında,</p>
+<pre><code>$ sudo apt-get install supervisor
+</code></pre>
+<p>komutunu kullanabilirsiniz. Uzun bir konfigürasyondan sonra son olarak supervisor ayarlarını da yapalım. Supervisor ayar dosyalarını /etc/supervisor/conf.d dizininde saklıyor. Dolayısıyla yapmamız gereken ;</p>
+<pre><code>$ cd /etc/supervisor/conf.d
+$ sudo vi hello_django.conf
+
+  [program:hello_django] 
+  command=/opt/myenv/bin/gunicorn -c /opt/myenv/hello_django_gunicorn_cfg.py hello_django.wsgi 
+  autostart=true 
+  autorestart=true 
+  stderr_logfile=/var/log/long.err.log 
+  stdout_logfile=/var/log/long.out.log 
+</code></pre>
+<p>Gördüğünüz gibi elle yazdığımız komudu command parametresinin değeri olarak yapıyoruz.Daha sonra supervisoru güncellemeliyiz.</p>
+<pre><code>$ supervisorctl reread
+$ supervisorctl update
+</code></pre>
+<p>komutlarıyla çalıştırmaya başlayabiliriz. Restart atmak için ise;</p>
+<pre><code>$ sudo service supervisor restart
+</code></pre>
+<p>Dikkat etmeniz gereken bir nokta ise deploy aldığınız zaman statik dosyaları güncellemeyi unutmamak ve supervisor&rsquo;ı da yenilemeniz atmanız olacaktır.</p>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://ugursogukpinar.com/blog/nereden-baslamalisin-karmasasi/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">“Nereden Başlamalısın?” Karmaşası</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="https://ugursogukpinar.com/blog/yasanmis-bir-yila-son-not/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Yaşanmış bir yıla son not</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/sogukpinarugur"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/ugursogukpinar"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Email"
+         href="mailto:me@ugursogukpinar.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/email.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2020</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

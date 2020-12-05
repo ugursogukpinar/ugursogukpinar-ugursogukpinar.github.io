@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on codex</title>
+    <link>https://ugursogukpinar.com/tags/docker/</link>
+    <description>Recent content in Docker on codex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Tue, 21 May 2019 22:16:00 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Stack Deploy</title>
+      <link>https://ugursogukpinar.com/blog/docker-stack-deploy/</link>
+      <pubDate>Tue, 21 May 2019 22:16:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/docker-stack-deploy/</guid>
+      <description>Docker ile tanışana kadar bir geliştirici olarak geliştirme ortamını ayağa kaldırmak, hazırlamak hep baş belası olmuştu. Virtualbox / Vagrant gibi çözümler var olsa da bu çözümler birçok problemi yanında getiriyordu. Ancak docker ile tanıştıktan sonra sıfır bir cihazı alıp geliştirme ortamını hazırlamak dakikalarla ifade edilebilir oldu. Her ne kadar uzun süredir geliştirme ortamında docker kullansam da production seviyesinde kullanma fırsatını hiç yakalayamadım.
+Wordpress 5.2 versiyonu çıktıktan sonra blogumu güncellemeye çalıştığımda farkına vardım ki kullandığım PHP versiyonu yeterli gelmiyor - evet benim için çok ayıp!</description>
+    </item>
+    
+  </channel>
+</rss>

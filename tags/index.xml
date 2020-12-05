@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on codex</title>
+    <link>https://ugursogukpinar.com/tags/</link>
+    <description>Recent content in Tags on codex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Tue, 21 May 2019 22:16:00 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>https://ugursogukpinar.com/tags/docker/</link>
+      <pubDate>Tue, 21 May 2019 22:16:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://ugursogukpinar.com/tags/life/</link>
+      <pubDate>Tue, 01 Jan 2019 00:47:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://ugursogukpinar.com/tags/python/</link>
+      <pubDate>Fri, 21 Dec 2018 21:23:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PHP</title>
+      <link>https://ugursogukpinar.com/tags/php/</link>
+      <pubDate>Tue, 12 Jul 2016 14:42:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/tags/php/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

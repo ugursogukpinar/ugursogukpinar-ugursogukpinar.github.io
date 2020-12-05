@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on codex</title>
+    <link>https://ugursogukpinar.com/blog/</link>
+    <description>Recent content in Blogs on codex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Tue, 21 May 2019 22:16:00 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Stack Deploy</title>
+      <link>https://ugursogukpinar.com/blog/docker-stack-deploy/</link>
+      <pubDate>Tue, 21 May 2019 22:16:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/docker-stack-deploy/</guid>
+      <description>Docker ile tanışana kadar bir geliştirici olarak geliştirme ortamını ayağa kaldırmak, hazırlamak hep baş belası olmuştu. Virtualbox / Vagrant gibi çözümler var olsa da bu çözümler birçok problemi yanında getiriyordu. Ancak docker ile tanıştıktan sonra sıfır bir cihazı alıp geliştirme ortamını hazırlamak dakikalarla ifade edilebilir oldu. Her ne kadar uzun süredir geliştirme ortamında docker kullansam da production seviyesinde kullanma fırsatını hiç yakalayamadım.
+Wordpress 5.2 versiyonu çıktıktan sonra blogumu güncellemeye çalıştığımda farkına vardım ki kullandığım PHP versiyonu yeterli gelmiyor - evet benim için çok ayıp!</description>
+    </item>
+    
+    <item>
+      <title>Ho ho ho! Elveda 2018.</title>
+      <link>https://ugursogukpinar.com/blog/ho-ho-ho-elveda-2018/</link>
+      <pubDate>Tue, 01 Jan 2019 00:47:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/ho-ho-ho-elveda-2018/</guid>
+      <description>Dudaklarım kilitli. Hoşçakal bugün.
+Sen de yolcusun, dünlerimde sorgusun
+ve 24&amp;rsquo;lük yorgunsun.
+Git de dinlen gidenlerle!
+Yarınım kapıda bekliyor ve son veda zamanı.
+ Akıp giden zaman için yapılan en güzel tasvirlerden biri bence. Duygusal bir giriş yapmış olsam da birçok yönüyle verimli bir yıl oldu benim için. Dolayısıyla gelecekteki Ben&amp;rsquo;e not bırakmanın tam zamanı bence.
+Öncelikle 2018&amp;rsquo;de, 2017 yılının son çeyreğinde ufak da olsa tereddütle verdiğim bir iş değişikliği kararının verdiğim en iyi karar olduğuna emin oldum.</description>
+    </item>
+    
+    <item>
+      <title>Python- Pandas nedir?</title>
+      <link>https://ugursogukpinar.com/blog/python-pandas-nedir/</link>
+      <pubDate>Fri, 21 Dec 2018 21:23:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/python-pandas-nedir/</guid>
+      <description>Yapay zeka, makine öğrenmesi veya derin öğrenme konularıyla ilgilenen hemen herkesin yolu Python ile kesişiyor. Bunun en büyük sebebi Python&amp;rsquo;da bu alanlara yönelik çok geniş ve büyük kolaylık sağlayan kütüphanelerin var olmasıdır.
+Pandas da, kullanımı kolay veri yapıları sunan ve veri üzerinde analiz yapmayı sağlayan açık kaynak kodlu Python kütüphanelerinden birisidir. Sahip olduğu bir çok özellik sebebiyle veri okuma ve önişleme aşamalarında makine öğrenmesi alanlarında çalışanlara büyük kolaylıklar sağlamaktadır.
+Ön koşullar   Python programlama dili hakkında temel bilgilere sahip olmak gereklidir.</description>
+    </item>
+    
+    <item>
+      <title>UBIT&#39;te son gün</title>
+      <link>https://ugursogukpinar.com/blog/ubitde-son-gun/</link>
+      <pubDate>Fri, 26 Aug 2016 18:56:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/ubitde-son-gun/</guid>
+      <description>Bugün 9 Aralık 2013&amp;rsquo;ten beri çalıştığım UBIT&amp;rsquo;de son günümdü. İlk işe başladığım günden bugüne kadar istisnasız herkes bir abi, abla ve kardeş edasıyla davrandığı için teşekkür etmeliyim. Yaşça genç ve tecrübesiz olmama rağmen sunduğum her düşünceye sonuna kadar değer veren insanlarla çalışmak kendini geliştirmek isteyen birisi için altın madenidir diyebilirim. 3 seneye yakın bu süreç içinde olağanüstü dostluklar, yüz güldüren anılar biriktirdiğim için çok mutluyum.
+Ofiste ilk tanıştığım ve her ortamda abi olarak gördüğüm, gezgin ruhuna hayran olduğum, hayatı karikatür formatında yaşayan yıllanmış blogger Hasan Civelek&amp;rsquo;e</description>
+    </item>
+    
+    <item>
+      <title>Laravel&#39;de imaj boyutlandırma</title>
+      <link>https://ugursogukpinar.com/blog/laravelde-imaj-boyutlandirma/</link>
+      <pubDate>Tue, 12 Jul 2016 14:42:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/laravelde-imaj-boyutlandirma/</guid>
+      <description>&lt;p&gt;Web uygulamalarının bütününde, yüklenen imajların çeşitli boyutlarda saklanması bir gereklilik olmuştur. Eski yaklaşımlarda imajlar sunucuya yüklenirken, tasarıma göre, istenen boyutlara dönüştürülüp kaydediliyordu. Imajların değiştirilmesi söz konusu olduğunda, eski imajların temizlenmesi, yerine yenilerinin yerleştirilmesi gibi problemlerin yanında tasarım değiştiğinde eski imajların yeniden boyutlandırılması gibi problemler oluşuyordu. Ancak tahmin ettiğiniz gibi bu eski bir yaklaşım. Yeni yaklaşımlarda ise bir imaj talep edildiğinde, istenen boyuta o anda dönüştürülmekte. Bu durum ilk başta çok yorucu bir işlem gibi eski yaklaşımın bir çok eksikliğini kapatıyor. İşlemini yoruculuğu ise caching yöntemleriyle azaltılabiliyor. Dolayısıyla bu yaklaşımın çok daha iyi olduğunu söyleyebiliriz.&lt;/p&gt;
+&lt;p&gt;Popüler bir geliştirme ortamı olan Laravel için bu yeni yaklaşımla bir örnek gösterelim. Öncelikle bu yapılan işlemlerin tamamı &lt;a href=&#34;http://image.intervention.io/use/url&#34; 
+  
+   target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
+&gt;burada&lt;/a&gt;
+ bulunmakta ve kullanacağımız kütüphaneyi &lt;a href=&#34;https://github.com/Intervention/image&#34; 
+  
+   target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
+&gt;buradan&lt;/a&gt;
+ inceleyebilirsiniz.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bir &#39;Controller&#39; nasıl olmalı?</title>
+      <link>https://ugursogukpinar.com/blog/bir-controller-nasil-olmali/</link>
+      <pubDate>Sat, 25 Jun 2016 23:18:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/bir-controller-nasil-olmali/</guid>
+      <description>Bu günlerde web geliştirme çatılarının (framework) neredeyse tamamı MVC (Model-View-Controller) modellemesini kullanmakta, ancak son zamanlarda incelediğim web uygulamalarında controllerın amaçları dışında aşırı yüklendiğini görüyorum ve bu konuda uzman olan kişilerden gördüklerimi, kendi deneyimlerimi paylaşmak istiyorum.
+Öncelikle MVC yapısının en temel kanunu kabaca MVC&amp;rsquo;yi oluşturan tüm bileşenlerin birbirinden bağımsız alanlarda olmasıdır. Bu bize bir View içerisinde database bağlantısı yapmamak, controller içerisinde string işlemleriyle HTML, JavaScript üretmemek gerektiğini söyler. Bunlar çok abartı örnekler olmasına rağmen hala MVC destekli çatılar altında böyle davranışlar söz konusu.</description>
+    </item>
+    
+    <item>
+      <title>Csv2Arff</title>
+      <link>https://ugursogukpinar.com/blog/csv2arff/</link>
+      <pubDate>Sun, 22 May 2016 18:57:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/csv2arff/</guid>
+      <description>Bir süredir üniversite çatısı altında ağı izleyip makine öğrenmesi yöntemleri kullanarak saldırıları tespit etmeyi hedefleyen bir proje üzerinde çalışıyorum ve şu an proje kapsamında ihtiyaç duyduğum ve haftasonu hazırladığım ufak bir dönüştürücüyü paylaşmak istiyorum.
+Elbette makine öğrenmesi yöntemleri deyince akla ilk gelen program Weka (bkz) dosya formatı ise arff(bkz) oluyor. Ancak biz projeye başladığımızda tüm verilerimizi CSV(bkz) formatında saklamıştık. Bu verileri Weka&amp;rsquo;ya aktarmak istediğimizde Weka&amp;rsquo;nın kendi dönüştürücüsü işimizi görüyordu. Ancak tüm yaptıklarımızı bir paket haline getirmek istediğimizde komut satırı üzerinde çalışan bir dönüştürücüye ihtiyaç duyduk.</description>
+    </item>
+    
+    <item>
+      <title>Yaşanmış bir yıla son not</title>
+      <link>https://ugursogukpinar.com/blog/yasanmis-bir-yila-son-not/</link>
+      <pubDate>Thu, 31 Dec 2015 18:48:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/yasanmis-bir-yila-son-not/</guid>
+      <description>Uzun süredir yazmadığımı göz önünde bulundurunca, yeni yılı bahane edip, hayatımdaki köklü değişikliklere şahit olan 2015 yılına son bir not düşmek istedim.
+Bu yılda yaşadığım en köklü değişiklik , doğup büyüdüğüm yer olan Soğanlık/Kartal&amp;rsquo;dan Şirinevler&amp;rsquo;e zorunlu olarak taşınmamdı. Her gün Esenler-Kartal arasında İstanbul şartları altında gidip gelmekte kurtulmak hoş olsa da aile sıcaklığını ve doğup büyüdüğünüz semti bırakmak oldukça zor. İnsan kendini yerçekiminin daha az olduğu bir dünyaya alışmaya çalışırken buluyor.</description>
+    </item>
+    
+    <item>
+      <title>Django projenizi VPS üzerine deploy edin!</title>
+      <link>https://ugursogukpinar.com/blog/django-projenizi-vps-uzerine-deploy-edin/</link>
+      <pubDate>Mon, 06 Jul 2015 11:41:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/django-projenizi-vps-uzerine-deploy-edin/</guid>
+      <description>Django&amp;rsquo;nun en güzel özelliklerinden biri şüphesiz development servera sahip olması. Şahsen iş yerinde PHP kullanan biri olarak , geliştirme ortamınızı ayarlamak zorundasınız. Örneğin bir apache server ya da bir nginx server kurulumunu yapmak , gerekli PHP paketlerini yüklemek zorundasınız. Django&amp;rsquo;da ise , django kurulduktan sonra tek bir satır kod ile projeyi servis etme şansınız var. Ancak bu durum tabi ki geliştirme süreci için geçerli. Projenizi yayına almak istediğiniz zaman elimizi biraz taşın altına sokuyoruz.</description>
+    </item>
+    
+    <item>
+      <title>“Nereden Başlamalısın?” Karmaşası</title>
+      <link>https://ugursogukpinar.com/blog/nereden-baslamalisin-karmasasi/</link>
+      <pubDate>Fri, 13 Mar 2015 13:34:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/nereden-baslamalisin-karmasasi/</guid>
+      <description>&lt;p&gt;Üniversite derslerim ve iş yoğunluğu nedeniyle uzun süredir yazamasam da , sürekli olarak başka yazıları takip ediyordum. Bu sıralar vakit bulunca , neredeyse her yerde karşılaştığım “Nereden Başlamalıyım?” başlığına bir bakış açısı da ben kazandırmak isterim.&lt;/p&gt;
+&lt;p&gt;Kendi çevreme bakarak söyleyebilirim ki , üniversitelerin herhangi bir bölümünü kazanan bir öğrenci nereye yöneleceğini , vaktini nasıl değerlendirmesi gerektiğini gerçekten bilmiyor. İnsanlar büyük bir hevesle yazdığı bölümde ders görmeye başlayınca , özellikle mühendislik öğrencileri temel mühendislik derslerini alırken , bu hevesin yerinde yeller esiyor. Çevremdeki çoğu insan defalarca , “Ne yapacağız ki?” , “Henüz birinci sınıfız ne yapabiliriz ki?” diye sorular sormaktan kendini alamıyor.&lt;/p&gt;
+&lt;p&gt;Şu anki durumunuzun betimlemesini yaptıysak eğer , madde madde sizin için verimli bir sene geçirmenin yollarından bahsedelim.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python Soket Programlama</title>
+      <link>https://ugursogukpinar.com/blog/python-soket-programlama/</link>
+      <pubDate>Fri, 13 Mar 2015 12:36:00 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/python-soket-programlama/</guid>
+      <description>Arkadaşlar bugün Python ile farklı bir alana değinmek istiyorum. Python çok yönlü bir dil ve biz Python ile soket programlama da yapabiliyoruz. Nedir soket programlama , en basit tabirle network programlamadır arkadaşlar , iki sistem arasında haberleşme, veri alışverişi kontrollerini programlama dersek çok yanlış olmaz.
+En temel olarak bir server betiği , bir de client betiği yazarak başlayacağız . Pythonda soket programlama yapmak için gerekli kütüphanemiz , “socket”.
+İlk olarak server betiğini yazmakla başlayalım.</description>
+    </item>
+    
+  </channel>
+</rss>
