@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on ugursogukpinar</title>
+    <link>https://ugursogukpinar.com/tags/linux/</link>
+    <description>Recent content in Linux on ugursogukpinar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Thu, 10 Dec 2020 23:06:36 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ArchLinux &#43; SwayWM</title>
+      <link>https://ugursogukpinar.com/blog/archlinux-and-sway-wm/</link>
+      <pubDate>Thu, 10 Dec 2020 23:06:36 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/archlinux-and-sway-wm/</guid>
+      <description>I told you I&amp;rsquo;ve been in a love with tiling window managers for a while since I&amp;rsquo;m a keyboard person. For me, if there is a shortcut to do something then use it, otherwise assign a shortcut. So tiling window managers are my thing but I must say it&amp;rsquo;s not feasible for a starter. If you don&amp;rsquo;t have that much experience on Linux OS probably you will get nuts if something goes wrong, and believe me probably something will go wrong.</description>
+    </item>
+    
+  </channel>
+</rss>

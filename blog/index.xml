@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Sat, 05 Dec 2020 22:39:16 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 23:06:36 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ArchLinux &#43; SwayWM</title>
+      <link>https://ugursogukpinar.com/blog/archlinux-and-sway-wm/</link>
+      <pubDate>Thu, 10 Dec 2020 23:06:36 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/archlinux-and-sway-wm/</guid>
+      <description>I told you I&amp;rsquo;ve been in a love with tiling window managers for a while since I&amp;rsquo;m a keyboard person. For me, if there is a shortcut to do something then use it, otherwise assign a shortcut. So tiling window managers are my thing but I must say it&amp;rsquo;s not feasible for a starter. If you don&amp;rsquo;t have that much experience on Linux OS probably you will get nuts if something goes wrong, and believe me probably something will go wrong.</description>
+    </item>
+    
     <item>
       <title>Status update, Dec 05</title>
       <link>https://ugursogukpinar.com/blog/status-update-dec-05/</link>

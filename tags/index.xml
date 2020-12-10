@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Sat, 05 Dec 2020 22:39:16 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 23:06:36 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://ugursogukpinar.com/tags/linux/</link>
+      <pubDate>Thu, 10 Dec 2020 23:06:36 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Life</title>
       <link>https://ugursogukpinar.com/tags/life/</link>

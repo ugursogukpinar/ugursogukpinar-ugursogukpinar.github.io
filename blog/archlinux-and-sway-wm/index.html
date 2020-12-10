@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+  <title>ArchLinux &#43; SwayWM | ugursogukpinar</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="I just wanted to share my configurations for ArchLinux &#43; SwayWM">
+  <meta name="keywords" content="ArchLinux , Arch , Linux , SwayWM , Tiling Window Manager">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ArchLinux &#43; SwayWM" />
+  <meta name="twitter:description" content="I just wanted to share my configurations for ArchLinux &#43; SwayWM"/>
+  <meta name="twitter:site" content="@sogukpinarugur" />
+  <meta name="twitter:creator" content="https://twitter.com/sogukpinarugur" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ugursogukpinar.com"
+      },
+      "articleSection" : "blog",
+      "name" : "ArchLinux \u002b SwayWM",
+      "headline" : "ArchLinux \u002b SwayWM",
+      "description" : "I just wanted to share my configurations for ArchLinux \u002b SwayWM",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-12-10 23:06:36 \u002b0300 \u002b03",
+      "dateModified" : "2020-12-10 23:06:36 \u002b0300 \u002b03",
+      "url" : "https:\/\/ugursogukpinar.com\/blog\/archlinux-and-sway-wm\/",
+      "wordCount" : "233",
+      "keywords" : ["ArchLinux", "Arch", "Linux", "SwayWM", "Tiling Window Manager", "Blog"]
+    }
+  
+  </script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-46294027-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">ArchLinux &#43; SwayWM</h1>
+            <time datetime="2020-12-10 23:06:36 &#43;0300 &#43;03" class="post__date">Dec 10 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<p>I told you I&rsquo;ve been in a love with tiling window managers for a while since I&rsquo;m a keyboard person. For me, if there is a shortcut to do something then use it, otherwise assign a shortcut. So tiling window managers are my thing but I must say it&rsquo;s not feasible for a starter. If you don&rsquo;t have that much experience on Linux OS probably you will get nuts if something goes wrong, and believe me probably something will go wrong. Anyway, recently I decided to install SwayWM top of ArchLinux and I feel like this is perfect setup for me for daily workflow. The ones who don&rsquo;t know me, I&rsquo;m a backend developer and mostly I spend my time between browser tabs (too many), editors, database manager, mail app and Slack.</p>
+<blockquote>
+<p>Here is my <a href="https://github.com/ugursogukpinar/dotfiles" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>dotfiles</a>
+ and I will keep it updated. But I should give credit to <a href="https://github.com/nboughton/dotfiles" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>nboughton</a>
+, I saw his theme on reddit and just did a few changes according my taste.</p>
+</blockquote>
+<h3 id="applications">Applications<a class="anchor" href="#applications">#</a></h3>
+<ul>
+<li>File Manager: <a href="https://github.com/ranger/ranger" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>ranger</a>
+ and thunar</li>
+<li>Browser: Firefox</li>
+<li>Editors: VSCode and Sublime Text</li>
+<li>Database: DataGrip</li>
+<li>Mail: Thunderbird</li>
+<li>Terminal: <a href="https://github.com/alacritty/alacritty" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Alacritty</a>
+</li>
+<li>Shell: zsh, <a href="https://github.com/ohmyzsh/ohmyzsh" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>oh-my-zsh</a>
+ with <a href="https://github.com/romkatv/powerlevel10k" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>powerlevel10k theme</a>
+</li>
+<li>Launcher: <a href="https://ulauncher.io/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Ulauncher</a>
+ (with some amazing extensions)</li>
+<li>Screenshot: <a href="https://github.com/emersion/grim" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>grim</a>
+, <a href="https://github.com/emersion/slurp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>slurp</a>
+, <a href="https://github.com/jtheoof/swappy" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>swappy</a>
+</li>
+<li>Screen record: <a href="https://github.com/emersion/grim" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>grim</a>
+, <a href="https://github.com/emersion/slurp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>slurp</a>
+, <a href="https://github.com/ammen99/wf-recorder" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>wf-recorder</a>
+</li>
+<li>Bar: <a href="https://github.com/Alexays/Waybar" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>waybar</a>
+</li>
+<li>Notifications: <a href="https://github.com/emersion/mako" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>mako</a>
+, <a href="https://github.com/misterdanb/avizo" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>avizo</a>
+, <a href="https://github.com/francma/wob" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>wob</a>
+</li>
+<li>For display management: <a href="https://github.com/cyclopsian/wdisplays" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>wdisplays</a>
+ and <a href="https://github.com/emersion/kanshi" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>kanshi</a>
+</li>
+<li>Clipboard Manager: <a href="https://github.com/yory8/clipman" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>clipman</a>
+</li>
+<li>GTK Theme: <a href="https://github.com/nboughton/NordSur" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://github.com/nboughton/NordSur</a>
+</li>
+<li>Waybar/Taskbar Icons: <a href="https://github.com/nboughton/DarK-fork" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://github.com/nboughton/DarK-fork</a>
+</li>
+</ul>
+<h3 id="screenshots">Screenshots<a class="anchor" href="#screenshots">#</a></h3>
+<p><a href="/images/posts/archlinux-and-sway-wm/desktop-1.png" 
+  
+  
+><img src="/images/posts/archlinux-and-sway-wm/desktop-1.png" alt="Screenshot 1"></a>
+</p>
+<p><a href="/images/posts/archlinux-and-sway-wm/desktop-2.png" 
+  
+  
+><img src="/images/posts/archlinux-and-sway-wm/desktop-2.png" alt="Screenshot 2"></a>
+</p>
+<p><a href="/images/posts/archlinux-and-sway-wm/desktop-3.png" 
+  
+  
+><img src="/images/posts/archlinux-and-sway-wm/desktop-3.png" alt="Screenshot 3"></a>
+</p>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://ugursogukpinar.com/tags/linux/">linux</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://ugursogukpinar.com/blog/status-update-dec-05/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Status update, Dec 05</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/sogukpinarugur"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/ugursogukpinar"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Email"
+         href="mailto:me@ugursogukpinar.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/email.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2020</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
