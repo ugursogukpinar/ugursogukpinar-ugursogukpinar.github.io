@@ -7,13 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Thu, 10 Dec 2020 23:06:36 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 12:32:21 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch</title>
+      <link>https://ugursogukpinar.com/tags/arch/</link>
+      <pubDate>Sun, 13 Dec 2020 12:32:21 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/tags/arch/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Linux</title>
       <link>https://ugursogukpinar.com/tags/linux/</link>
-      <pubDate>Thu, 10 Dec 2020 23:06:36 +0300</pubDate>
+      <pubDate>Sun, 13 Dec 2020 12:32:21 +0300</pubDate>
       
       <guid>https://ugursogukpinar.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sway</title>
+      <link>https://ugursogukpinar.com/tags/sway/</link>
+      <pubDate>Sun, 13 Dec 2020 12:32:21 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/tags/sway/</guid>
       <description></description>
     </item>
     

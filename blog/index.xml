@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Thu, 10 Dec 2020 23:06:36 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 12:32:21 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wf-recorder indicator for waybar</title>
+      <link>https://ugursogukpinar.com/blog/wfrecorder-waybar-indicator/</link>
+      <pubDate>Sun, 13 Dec 2020 12:32:21 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/wfrecorder-waybar-indicator/</guid>
+      <description>Hey all! You know that I shared my latest setup in the previous blog post and if you noticed that there is a shortcut in the sway configurations to start/stop screen recording with wf-recorder . Yesterday, I just realized that I accidentally hit the shortcut and started a recording on background and my computer was about the cry after probably a couple of hours. So I decided to create an indicator for the waybar to show ongoing screen recording.</description>
+    </item>
+    
     <item>
       <title>ArchLinux &#43; SwayWM</title>
       <link>https://ugursogukpinar.com/blog/archlinux-and-sway-wm/</link>
