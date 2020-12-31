@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Sun, 13 Dec 2020 12:32:21 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 21:52:21 +0300</lastBuildDate><atom:link href="https://ugursogukpinar.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2020 Overview</title>
+      <link>https://ugursogukpinar.com/blog/2020-overview/</link>
+      <pubDate>Thu, 31 Dec 2020 21:52:21 +0300</pubDate>
+      
+      <guid>https://ugursogukpinar.com/blog/2020-overview/</guid>
+      <description>I got engaged! I know there is not much good thing to say for this year, but I can say that I&amp;rsquo;ll never forget this year. I got engaged with the girl I met in 2009, yes it took 11 years, and she made me the happiest and the luckiest guy in the world! Also, this year proved that even if the storms outside it&amp;rsquo;s easy to stand when you have the ones that you love around.</description>
+    </item>
+    
     <item>
       <title>wf-recorder indicator for waybar</title>
       <link>https://ugursogukpinar.com/blog/wfrecorder-waybar-indicator/</link>
