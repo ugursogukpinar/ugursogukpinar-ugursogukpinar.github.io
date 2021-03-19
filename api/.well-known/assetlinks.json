@@ -1,0 +1,37 @@
+[{
+   "relation": ["delegate_permission/common.handle_all_urls"],
+   "target": {
+     "namespace": "android_app",
+     "package_name": "com.sanofi.corporate.healthfeed",
+     "sha256_cert_fingerprints":
+     ["92:52:18:47:81:10:6C:27:51:B0:0E:25:45:E1:47:B3:19:93:75:84:DA:65:7F:71:E3:79:C6:AD:9E:E2:25:25"]
+   }
+ },
+ {
+   "relation": ["delegate_permission/common.handle_all_urls"],
+   "target": {
+     "namespace": "android_app",
+     "package_name": "com.sanofi.corporate.healthfeed.debug",
+     "sha256_cert_fingerprints":
+     ["92:52:18:47:81:10:6C:27:51:B0:0E:25:45:E1:47:B3:19:93:75:84:DA:65:7F:71:E3:79:C6:AD:9E:E2:25:25"]
+   }
+ },
+ {
+   "relation": ["delegate_permission/common.handle_all_urls"],
+   "target": {
+     "namespace": "android_app",
+     "package_name": "com.sanofi.corporate.healthfeed.beta",
+     "sha256_cert_fingerprints":
+     ["92:52:18:47:81:10:6C:27:51:B0:0E:25:45:E1:47:B3:19:93:75:84:DA:65:7F:71:E3:79:C6:AD:9E:E2:25:25"]
+   }
+ },
+ {
+   "relation": ["delegate_permission/common.handle_all_urls"],
+   "target": {
+     "namespace": "android_app",
+     "package_name": "com.sanofi.corporate.healthfeed.alpha",
+     "sha256_cert_fingerprints":
+     ["92:52:18:47:81:10:6C:27:51:B0:0E:25:45:E1:47:B3:19:93:75:84:DA:65:7F:71:E3:79:C6:AD:9E:E2:25:25"]
+   }
+ }]
+ 
