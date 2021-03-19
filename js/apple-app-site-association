@@ -1,0 +1,33 @@
+{
+   "applinks":{
+      "apps":[
+ 
+      ],
+      "details":[
+         {
+            "appID":"G3KLV9FB9G.com.sanofi.tr.healthfeed",
+            "paths":[
+               "*"
+            ]
+         },
+         {
+            "appID":"HG6LCE7U6E.com.sanofi.maf.beta.healthfeed",
+            "paths":[
+               "*"
+            ]
+         },
+         {
+            "appID":"HG6LCE7U6E.com.sanofi.maf.alpha.healthfeed",
+            "paths":[
+               "*"
+            ]
+         },
+         {
+            "appID":"Y3P7T97K27.com.ting.health-feed",
+            "paths":[
+               "*"
+            ]
+         }
+      ]
+   }
+ }
