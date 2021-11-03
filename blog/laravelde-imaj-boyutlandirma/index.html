@@ -35,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.a4712d0376acf8c0491ef2b98baf2f9287629f027a654e15b0ca42433957f47d.css" integrity="sha256-pHEtA3as&#43;MBJHvK5i68vkodinwJ6ZU4VsMpCQzlX9H0="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
@@ -130,12 +130,10 @@ if (!doNotTrack) {
 <p>Popüler bir geliştirme ortamı olan Laravel için bu yeni yaklaşımla bir örnek gösterelim. Öncelikle bu yapılan işlemlerin tamamı <a href="http://image.intervention.io/use/url" 
   
    target="_blank" rel="noreferrer noopener" 
->burada</a>
- bulunmakta ve kullanacağımız kütüphaneyi <a href="https://github.com/Intervention/image" 
+>burada</a> bulunmakta ve kullanacağımız kütüphaneyi <a href="https://github.com/Intervention/image" 
   
    target="_blank" rel="noreferrer noopener" 
->buradan</a>
- inceleyebilirsiniz.</p>
+>buradan</a> inceleyebilirsiniz.</p>
 <p><strong>1- Kurulum</strong></p>
 <p>Kurulum işlemi composer ile gerçekleştirilebiliyor. Burada kullanacağımız 2 adet paket bulunmakta;</p>
 <pre><code>composer require intervention/image
@@ -163,15 +161,20 @@ composer require intervention/imagecache
 <p>Ben imagemagick eklentisini PHP&rsquo;ye eklediğim için bu seçeneği <em>imagick</em> olarak seçiyorum. Bu kütüphanelerle desteklenen formatları görmek için <a href="http://image.intervention.io/getting_started/formats" 
   
    target="_blank" rel="noreferrer noopener" 
->buradan</a>
- faydalanabilirsiniz.</p>
-<p>Bu işlemden sonra, <em>imagecache.php</em> üzerinde birkaç değişiklik yapmamız gerekli. Öncelikle buradaki <em>route</em> parametresini imajlara ulaşmak için kullanacağımız prefix ve route name için düzenliyoruz. Örnek vermek gerekirse <em>img/test.png</em> isimli bir imaja erişmek için <a href="http://domain.com/%7Broute">http://domain.com/{route</a>_name}/{template}/img/test.png gibi bir URL&rsquo;i kullanacağız. Buradaki <em>route</em> parametresi {route_name} için kullanılıyor.</p>
+>buradan</a> faydalanabilirsiniz.</p>
+<p>Bu işlemden sonra, <em>imagecache.php</em> üzerinde birkaç değişiklik yapmamız gerekli. Öncelikle buradaki <em>route</em> parametresini imajlara ulaşmak için kullanacağımız prefix ve route name için düzenliyoruz. Örnek vermek gerekirse <em>img/test.png</em> isimli bir imaja erişmek için <a href="http://domain.com/%7broute" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>http://domain.com/{route</a>_name}/{template}/img/test.png gibi bir URL&rsquo;i kullanacağız. Buradaki <em>route</em> parametresi {route_name} için kullanılıyor.</p>
 <pre><code>'route' =&gt; 'imagecache'
 </code></pre>
 <p>Yukarıdaki gibi bir düzenleme yaptığımızı düşünerek devam edebiliriz. Bu işlemden sonra &lsquo;/imagecache/&rsquo; ile başlayan tüm URI&rsquo;lerde kütüphanemiz devreye girecektir. Ancak burada ikinci önemli kısım, kütüphanenin imajları hangi klasörlerde arayacağının ayarlanmasıdır. Burada ise devreye <em>paths</em> parametresi devreye giriyor.</p>
 <pre><code>'paths' =&gt; array(public_path())
 </code></pre>
-<p>Bu işlem ile <em>public</em> klasörü altında arama yapabileceğini söylemiş bulunuyoruz. Bu durumda <em>/{proje_klasoru}/public/images/001/test.png</em> yolundaki bir imaja ulaşmak için <a href="http://domain.com/imagecache/%7Btemplate%7D/images/001/test.png">http://domain.com/imagecache/{template}/images/001/test.png</a> şeklinde bir istekte bulunacağız. Burada <em>path</em> parametresi altında verilen yolları kök klasörmüş gibi kabül edebiliriz.</p>
+<p>Bu işlem ile <em>public</em> klasörü altında arama yapabileceğini söylemiş bulunuyoruz. Bu durumda <em>/{proje_klasoru}/public/images/001/test.png</em> yolundaki bir imaja ulaşmak için <a href="http://domain.com/imagecache/%7btemplate%7d/images/001/test.png" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>http://domain.com/imagecache/{template}/images/001/test.png</a> şeklinde bir istekte bulunacağız. Burada <em>path</em> parametresi altında verilen yolları kök klasörmüş gibi kabül edebiliriz.</p>
 <p>Son olarak URL üzerindeki {template} kısmını açıklamamız gerekiyor. {template} için varsayılan olarak tanımlanan <em>small, medium, large</em> seçeneklerinin yanında, <em>original, download</em> gibi seçenekler de mevcut. Burada template imaj gönderilirken hangi filtrenin uygulanacağını ifade etmekte. Dolayısıyla proje içerisinde kullanıcı fotoğraflarının 200x200 ' boyutunda değilde 150x150 boyutunda kullanılması gerektiğinde, sadece filtrenin yani template parametresinin değiştirilmesi ve gerekli filtrenin hazırlanması yeterli olacaktır.</p>
 <blockquote>
 <p><em>download</em> parametresi imajın tarayıcıda görüntülenmesi yerine kullanıcının bilgisayarına dosya şeklinde indirilmesini sağlıyor.</p>
@@ -204,8 +207,7 @@ class Thumb implements FilterInterface
 <p>Burada resize etmek dışında imajın canvas büyüklüğünü değiştirebilir, farklı imajlarla birleştirebilir, çeşitli görsel efektler uygulayabilirsiniz. Tüm dökümantasyona <a href="http://image.intervention.io/" 
   
    target="_blank" rel="noreferrer noopener" 
->buradan</a>
- ulaşabilirsiniz.</p>
+>buradan</a> ulaşabilirsiniz.</p>
 
               
           </article>
@@ -214,7 +216,7 @@ class Thumb implements FilterInterface
 <ul class="tags__list">
     
     <li class="tag__item">
-        <a class="tag__link" href="https://ugursogukpinar.com/tags/php/">php</a>
+        <a class="tag__link" href="https://ugursogukpinar.com/tags/php/">PHP</a>
     </li></ul>
 
  <div class="pagination">
@@ -242,27 +244,39 @@ class Thumb implements FilterInterface
   
      
     
-      <a class="social-icons__link" rel="me" title="Twitter"
-         href="https://twitter.com/sogukpinarugur"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/sogukpinarugur"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/twitter.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="GitHub"
-         href="https://github.com/ugursogukpinar"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/ugursogukpinar"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="Email"
-         href="mailto:me@ugursogukpinar.com"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:me@ugursogukpinar.com"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/email.svg')"></div>
       </a>
     

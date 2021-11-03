@@ -35,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.a4712d0376acf8c0491ef2b98baf2f9287629f027a654e15b0ca42433957f47d.css" integrity="sha256-pHEtA3as&#43;MBJHvK5i68vkodinwJ6ZU4VsMpCQzlX9H0="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
@@ -139,8 +139,7 @@ if (!doNotTrack) {
 <p>Bu aşamaların üstüne örnek bir senaryo giydirmeye çalışalım ve bir okul sisteminde öğrenci kayıt yapan bir aksiyonu düşünelim. Burada istek alındığında yapılması gereken ilk şey, &ldquo;authentication&rdquo; yani isteği gönderen kişinin sistem tarafından tanınıp tanınmadığı olmalıdır. Yeni nesil çatılarda bu aşama genelde controller&rsquo;ların üstünde ayrı bir katman olarak tutulur. Laravel Framework&rsquo;u göz önüne aldığımızda genelde bu işi <a href="https://laravel.com/docs/5.2/middleware" 
   
    target="_blank" rel="noreferrer noopener" 
->&ldquo;Middleware&rdquo;</a>
- kullanarak hallederiz.</p>
+>&ldquo;Middleware&rdquo;</a> kullanarak hallederiz.</p>
 <p>Kişinin kim olduğunu tespit ettikten sonra asıl olan o kişinin öğrenci kaydını yapıp yapamayacağını belirlemektir. Buna yetkilendirme (authorization) denir, aslına bakılırsa çok geniş bir konudur ve ayrıca incelenmesi gerekir. Yine Laravel Framework&rsquo;den örnek verirsek, çoğu durumda yine Middleware kullanarak yetkilendirme işlemini çözebiliriz. Ancak ben burada bunu bir kenara bırakıp controller içerisinde yapmayı tercih edeceğim. Dolayısıyla öğrenci kayıdı alan aksiyonumuzun içerisinde yazacağımız ilk satırların yetkilendirme için olacağını söyleyebiliriz.</p>
 <pre><code>class StudentController extends BaseController {
     public function save(Request $request) {
@@ -174,8 +173,7 @@ if (!doNotTrack) {
 <p>Bu aşamayıda geçtikten sonra artık istenen işlemi yapmanın vakti gelmiş demektir. Ancak ne yazık ki çoğu kişinin direkt olarak burada gerekli modelin fonksiyonlarını çağırarak veritabanına kayıt eklediğini görüyoruz. Ki işler bu safhada karışıyor diyebiliriz. Burada save() aksiyonu, her ne kadar ismi çok uygunsa da, öğrenciyi kaydetmekle yükümlü bir fonksiyon olmamalıdır. Büyük projelerde direkt modeli burada kullanmak pek akıllıca olmayacaktır. Burada araya &ldquo;Repository&rdquo; dediğimiz bir katmanı ekliyoruz. Repository kavramını daha iyi anlamak için <a href="https://bosnadev.com/2015/03/07/using-repository-pattern-in-laravel-5/" 
   
    target="_blank" rel="noreferrer noopener" 
->buradaki</a>
- paylaşımı kullanabilirsiniz.</p>
+>buradaki</a> paylaşımı kullanabilirsiniz.</p>
 <pre><code>class StudentController extends BaseController {
   
     public function save(Request $request, StudentRepository $studentRepository) {
@@ -230,8 +228,7 @@ if (!doNotTrack) {
 <p><a href="https://en.wikipedia.org/wiki/KISS_principle" 
   
    target="_blank" rel="noreferrer noopener" 
->Keep it simple, stupid</a>
-</p>
+>Keep it simple, stupid</a></p>
 
 
               
@@ -263,27 +260,39 @@ if (!doNotTrack) {
   
      
     
-      <a class="social-icons__link" rel="me" title="Twitter"
-         href="https://twitter.com/sogukpinarugur"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/sogukpinarugur"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/twitter.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="GitHub"
-         href="https://github.com/ugursogukpinar"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/ugursogukpinar"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="Email"
-         href="mailto:me@ugursogukpinar.com"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:me@ugursogukpinar.com"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/email.svg')"></div>
       </a>
     

@@ -35,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.a4712d0376acf8c0491ef2b98baf2f9287629f027a654e15b0ca42433957f47d.css" integrity="sha256-pHEtA3as&#43;MBJHvK5i68vkodinwJ6ZU4VsMpCQzlX9H0="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
@@ -224,8 +224,14 @@ services:
 <!-- wp:quote -->
 <blockquote>
 <p>İlgili Docker imajları hakkında bilgi için:</p>
-<p><a href="https://hub.docker.com/_/wordpress">https://hub.docker.com/_/wordpress</a><br>
-<a href="https://hub.docker.com/_/mysql">https://hub.docker.com/_/mysql</a></p>
+<p><a href="https://hub.docker.com/_/wordpress" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://hub.docker.com/_/wordpress</a><br>
+<a href="https://hub.docker.com/_/mysql" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://hub.docker.com/_/mysql</a></p>
 </blockquote>
 <!-- /wp:quote -->
 <!-- wp:paragraph -->
@@ -252,7 +258,10 @@ services:
 <!-- /wp:separator -->
 </p>
 <!-- wp:paragraph -->
-<p>Şu anda elimizde dockerize edilmiş bir uygulama bulunuyor ve biz bu uygulamayı sunucuya yine Docker kullanarak deploy etmek istiyoruz. Öncelikle deploy edeceğimiz sunucuyu oluşturalım. Ben servis sağlayıcı olarak DigitalOcean kullanacağım ancak desteklenen diğer sürücüleri görmek isterseniz <a href="https://docs.docker.com/machine/drivers/">https://docs.docker.com/machine/drivers/</a> buraya bakabilirsiniz.</p>
+<p>Şu anda elimizde dockerize edilmiş bir uygulama bulunuyor ve biz bu uygulamayı sunucuya yine Docker kullanarak deploy etmek istiyoruz. Öncelikle deploy edeceğimiz sunucuyu oluşturalım. Ben servis sağlayıcı olarak DigitalOcean kullanacağım ancak desteklenen diğer sürücüleri görmek isterseniz <a href="https://docs.docker.com/machine/drivers/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://docs.docker.com/machine/drivers/</a> buraya bakabilirsiniz.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
 <p>Öncelikle DigitalOcean API&rsquo;sini kullanabilmek için <em>token</em> üretelim. <em>DigitalOcean &gt; API &gt; Generate New Token</em> yolunu takip ederek oluşturabilirsiniz. Oluşan <em>token&rsquo;ı</em> saklamayı unutmayın. Sayfayı kapattığınızda tekrar [göremeyeceksiniz]{style=&ldquo;text-decoration: underline;&quot;}.</p>
@@ -271,7 +280,10 @@ services:
 <p>Lütfen &lt;TOKEN&gt; ve &lt;DROPLET ADI&gt; kısımlarını değiştirmeyi unutmayın. Yazının devamında &lt;DROPLET ADI&gt; olarak <em>myblog</em> kullanacağım.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p>DigitalOcean hesabınıza girip <em>Droplets</em> sekmesinde oluşan sunucuyu görebilirsiniz. Makineyi oluştururken kullanabileceğiniz tüm opsiyonları ise <a href="https://docs.docker.com/machine/drivers/digital-ocean/">https://docs.docker.com/machine/drivers/digital-ocean/</a> buradan inceleyebilirsiniz.</p>
+<p>DigitalOcean hesabınıza girip <em>Droplets</em> sekmesinde oluşan sunucuyu görebilirsiniz. Makineyi oluştururken kullanabileceğiniz tüm opsiyonları ise <a href="https://docs.docker.com/machine/drivers/digital-ocean/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://docs.docker.com/machine/drivers/digital-ocean/</a> buradan inceleyebilirsiniz.</p>
 <!-- /wp:paragraph -->
 <!-- wp:image {"id":298} -->
 <p><img src="/images/posts/2019/05/2019-05-21_22-57.png" alt="">{.wp-image-298}</p>
@@ -453,7 +465,10 @@ services:
 <!-- wp:core-embed/youtube {"url":"https://www.youtube.com/watch?v=cNbCG6Nih3Q","type":"video","providerNameSlug":"youtube","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
 <p>::: {.wp-block-embed__wrapper}
-<a href="https://www.youtube.com/watch?v=cNbCG6Nih3Q">https://www.youtube.com/watch?v=cNbCG6Nih3Q</a>
+<a href="https://www.youtube.com/watch?v=cNbCG6Nih3Q" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://www.youtube.com/watch?v=cNbCG6Nih3Q</a>
 :::</p>
 </figure>
 <!-- /wp:core-embed/youtube -->
@@ -469,7 +484,7 @@ services:
 <ul class="tags__list">
     
     <li class="tag__item">
-        <a class="tag__link" href="https://ugursogukpinar.com/tags/docker/">docker</a>
+        <a class="tag__link" href="https://ugursogukpinar.com/tags/docker/">Docker</a>
     </li></ul>
 
  <div class="pagination">
@@ -497,27 +512,39 @@ services:
   
      
     
-      <a class="social-icons__link" rel="me" title="Twitter"
-         href="https://twitter.com/sogukpinarugur"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/sogukpinarugur"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/twitter.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="GitHub"
-         href="https://github.com/ugursogukpinar"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/ugursogukpinar"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="Email"
-         href="mailto:me@ugursogukpinar.com"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:me@ugursogukpinar.com"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/email.svg')"></div>
       </a>
     
