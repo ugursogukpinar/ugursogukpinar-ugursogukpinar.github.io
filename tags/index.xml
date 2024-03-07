@@ -6,6 +6,15 @@
     <description>Recent content in Tags on ugursogukpinar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <copyright>© {year}</copyright><atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Wed, 21 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend</title>
+      <link>https://ugursogukpinar.com/tags/backend/</link>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://ugursogukpinar.com/tags/backend/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

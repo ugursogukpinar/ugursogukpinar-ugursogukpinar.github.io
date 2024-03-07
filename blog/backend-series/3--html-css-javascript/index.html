@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>HTML, CSS ve JavaScript | ugursogukpinar</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="HTML, CSS ve JavaScript" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@sogukpinarugur" />
+  <meta name="twitter:creator" content="https://twitter.com/sogukpinarugur" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/"
+      },
+      "articleSection" : "blog",
+      "name" : "HTML, CSS ve JavaScript",
+      "headline" : "HTML, CSS ve JavaScript",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "0001",
+      "datePublished": "0001-01-01 00:00:00 \u002b0000 UTC",
+      "dateModified" : "0001-01-01 00:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/localhost:1313\/blog\/backend-series\/3--html-css-javascript\/",
+      "wordCount" : "1128",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <script data-ad-client="ca-pub-3337310554024693" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blogs">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">HTML, CSS ve JavaScript</h1>
+            
+          </header>
+          <article class="post__content">
+              
+<h1 id="html-css-ve-javascript">HTML, CSS ve JavaScript</h1>
+<p>Bir önceki yazımızda web&rsquo;in temel taşlarına ve internet ağı üstünde nasıl çalıştığına değinmiştik. Bu bölümde ise web sayfalarının nasıl oluştuğunu ve tarayıcıların sayfaları nasıl yorumladığını inceleyeceğiz. Her ne kadar bu konular frontend geliştiricilerin ilgi alanında olsa da bir backend geliştirici olarak sayfaların nasıl çalıştığını bilmek önemli.</p>
+<blockquote>
+<p><em>Backend</em>&lsquo;i sunucu üzerinde çalışan her türlü uygulama olarak, <em>Frontend</em>&lsquo;i ise tarayıcı üzerinde çalışan her türlü uygulama olarak sınıflandırabilirsiniz.</p>
+</blockquote>
+<h2 id="html-hypertext-markup-language">HTML (Hypertext Markup Language)<a class="anchor" href="#html-hypertext-markup-language">#</a></h2>
+<p>Aslında bir önceki yazımızda web&rsquo;in temel taşlarını anlatırken bu konuya değinmiştik, burada ise HTML ile bir sayfadaki verilerin nasıl yapısallaştırıldığını inceleyeceğiz. Buradaki amacımız size HTML öğretmek değil, sadece tarayıcıların HTML kodunu nasıl yorumladığını açıklamak olacak. HTML ile ilgili herşeyi öğrenmek için <a href="https://www.w3schools.com/html/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>şuraya</a> bakabilirsiniz.</p>
+<p>Sayfa yapısını anlamak için çok basit bir HTML kodunu alıp inceleyelim.</p>
+<pre><code class="language-python">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Aslında bu yazdıklarımızı, kendi bilgisayarınızda basit bir metin editörü kullanarak (Notepad gibi) <strong>.html</strong> uzantılı bir dosya olarak kaydederseniz. Oluşan dosyayı hergün kullandığınız tarayıcıyla açtığınızda, aşağıdaki gibi bir sayfanın oluştuğunu göreceksiniz.</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1640952384608/i1LeMEkvM.png" alt="Screenshot from 2021-12-31 15-06-02.png"></p>
+<p>Yazdığımız koda tekrar geri dönersek, ilk gözümüze çarpan kodun içerisinde yazmamıza rağmen sayfa üstünde görünmeyen <strong>&lt;</strong> ve <strong>&gt;</strong> işaretleri arasına yazılmış bazı ifadeler görürsünüz. Bunlara HTML etiketi (<em>tag</em>) diyoruz. Aslında HTML&rsquo;in adını gözünüzün önüne alırsanız sonunda <em>Markup Langugage</em> yani işaretleme dili dendiğini görürsünüz. İşte HTML&rsquo;de bazı etiketleri kullanarak verimizi işaretliyoruz.</p>
+<p>Şimdi etiketleri tek tek inceleyecek olursak.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+</code></pre>
+<p>Aslında bu ifadenin tek yaptığı, bu dosyayı açan programa (bu durumda tarayıcıya) bunun bir HTML dosyası olduğunu ifade ediyor. Bunu kullanarak aşağıda kullanılacak bazı standartları da tarayıcıya söyleyebiliyoruz ancak, şimdilik kafa karıştırmaya gerek yok.</p>
+<pre><code class="language-html">&lt;html&gt;
+  ...
+&lt;/html&gt;
+</code></pre>
+<p>Bu ifadenin tek yaptığı, HTML dökümanımızın başlangıç ve bitişini belirtmek.</p>
+<pre><code class="language-html">&lt;head&gt; 
+   ... 
+&lt;/head&gt;
+</code></pre>
+<p>Bir HTML dosyası çok önemli 2 adet kısımdan oluşuyor. Bunlardan birincisi <strong>head</strong> yani başlık. Başlık içerisine yazdıklarınız sayfa içerisinde görünmemekle birlikte, başlık içerisinde sayfanın ne olduğu, başlığının ne olduğu (tarayıcıdaki sekmelerin içinde yazan başlık) veya ileride konuşacağımız hangi CSS ve JavaScript dosyalarının sayfaya yükleneceğini tanımladığımız alandır.</p>
+<pre><code class="language-html">&lt;body&gt;
+ ...
+&lt;/body&gt;
+</code></pre>
+<p>Önemli iki kısımdan birisi için <em>head</em> demiştik, ikinci önemli kısım ise <strong>body</strong>, isminden de anlaşılacağı üzere aslında sayfa içerisinde göstermek istediğiniz verileri koyduğunuz alandır.</p>
+<pre><code class="language-html">&lt;h1&gt; ... &lt;/h1&gt;
+&lt;p&gt; .. &lt;/p&gt;
+</code></pre>
+<p>İşte tam bu noktadan sonra HTML&rsquo;in nasıl bir amaca hizmet ettiğini kavrayabiliriz. Çünkü başından beri, HTML&rsquo;in veriyi nasıl yapılandırdığımızı ifade etmek için kullanıldığını söylemiştim. Buna örnek olarak <strong>h1</strong> etiketi içerisine yazılanların bir başlık olduğunu ifade eder. Yukardaki ekran görüntüsüne baktığınızda ise bu başlığın nispeten daha büyük ve kalın harflerle yazıldığını görürsünüz. Aslında görüntüdeki bu değişiklik tarayıcıların HTML etiketleri için bazı standart biçimlendirmelere sahip olmasından kaynaklıdır. Birazdan üstüne konuşacağımız CSS ile bu biçimlendirmeleri nasıl değiştireceğimizi göreceğiz. Yine aynı şekilde diğer bir etiket olan <strong>p</strong> ise paragrafları ifade ettiğini anlamışsınızdır.</p>
+<p>Aslında diğer bir önemli nokta, etiketlerin bir veriyi işaretlemek için açılan ve kapanan yapılarda olmasıdır. Yani başlık için kullanacağımız yazının nereden itibaren başladığını belli etmek için <code>&lt;h1&gt;</code>, ardından başlığımızın kendisi, ardından başlığın bittiğini ifade eden <code>&lt;/h1&gt;</code> kapanış etiketini görüyoruz. Bu birçok etiket için böyleyken, bazı etiketler açıldığı yerde kapanır. Bunlara örnek olarak bir alt satıra geçildiğini ifade eden <code>&lt;/br&gt;</code> ya da sayfaya yatay bir çizgi koymanıza yarayan <code>&lt;/hr&gt;</code> gibi.</p>
+<p>Söylediğim gibi buradaki amacımız tüm HTML etiketlerini incelemek değil, merak ederseniz <a href="https://www.w3schools.com/html/default.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>burada</a> tüm etiketleri bulabilirsiniz.</p>
+<h2 id="css-cascading-style-sheet">CSS (Cascading Style Sheet)<a class="anchor" href="#css-cascading-style-sheet">#</a></h2>
+<p>Bir backend geliştirici olarak CSS&rsquo;in derinlikliklerine inmenize hiç gerek yok, sadece ve sadece ne işe yaradığını ve HTML içerisinde nasıl kullanıldığını bilseniz yeterli.</p>
+<p>Öncelikle HTML için sayfadaki verilerin nasıl yapılandırıldığını ifade etmek için kullanılır demiştik, CSS ise sayfanın <strong>nasıl görüneceğini</strong> belirler.</p>
+<p>Yukardaki örneğimizi birazcık renklendirelim istersek, şöyle genişletebiliriz:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+
+&lt;style&gt;
+   h1 {
+      font-size: 18px;
+      color: red;
+   }
+
+   p {
+       border: 1px solid #cacaca;
+       color: blue;
+   }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Bu dosyayı kaydedip açtığımızda şöyle bir görüntüyle karşılaşıyoruz:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1640954428820/dUtO7vHcN.png" alt="Screenshot from 2021-12-31 15-39-48.png"></p>
+<p>Gördüğünüz gibi başlığımızın büyüklüğünü ve rengini değiştik, paragraflarımızın da etrafına bir çerçeve ekleyerek onları da mavi renkte gösterdik.</p>
+<p>Burada sayfamızın <code>head</code> kısmını kullanarak, sayfaya bir <strong>stil</strong> (<em>style</em>) ekledik, ve &ldquo;h1&rdquo; ve &ldquo;p&rdquo; gibi <strong>seçiciler</strong> (<em>selector</em>) kullanarak <em>body</em> içerisinde tanımladığımız başlık ve paragrafların görüntüsünü değiştirdik.</p>
+<p>Burdan baktığınızda çok ilkel gibi gelebilir ancak inanın CSS tam anlamıyla bir tavşan deliğidir, ve harika şeyler yapabilirsiniz. Örneğin aşağıdaki videoda sadece HTML ve CSS kullanılarak sayfada su damlası oluşturuluyor.</p>
+<p>Bir backend geliştirici olarak çok detaya girmenin önemi olduğunu düşünmüyorum, zaten vakit geçtikçe birçok konu hakkında fikir sahibi olacaksınız. Eğer CSS&rsquo;i daha derinlemesine öğrenmek isterseniz, Adem Ilter&rsquo;ın Youtube serisini kesinlikle tavsiye ederim.</p>
+<h2 id="javascript-js">JavaScript (JS)<a class="anchor" href="#javascript-js">#</a></h2>
+<p>JavaScript tarayıcının okuyup çalıştırabildiği ve web sayfaları üzerinde daha komplike işleri yapmamızı sağlayan bir programlama dilidir. Çıkış amacı web sayfaları üzerinde çalışmak olsa da günümüzde sunucu taraflı uygulama geliştirme (backend), mobil uygulama geliştirme ve daha bir çok alanda adını duyabilirsiniz.</p>
+<p>Bu zamana kadar web sayfalarından sadece statik bir yazının yayınlanıp paylaşıldığı bir yapıymış gibi bahsettik. Oysa günümüz web sayfaları, sayfa olmaktan çok bir uygulama olarak davranıyor. Web üzerinden film izliyoruz, animasyonlar görüyoruz, Excel tablolarımızı oluşturabiliyoruz, sunumlar hazırlayabiliyoruz&hellip; İşte JavaScript bu şekilde daha kompleks yapıları oluşturabilmek için tasarlandı. Yukarda saydığımız bir çok özelliğin yanından bile geçmese de örnek olması açısından şuna bakabiliriz:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+
+&lt;style&gt;
+   h1 {
+      font-size: 18px;
+      color: red;
+   }
+
+   p {
+       border: 1px solid #cacaca;
+       color: blue;
+   }
+&lt;/style&gt;
+
+&lt;script&gt;
+	window.addEventListener('load', (event) =&gt; {
+		const para = document.querySelector('p');
+
+		para.addEventListener('click', updateParagraph);
+
+		function updateParagraph() {
+		  const updatedParagraph = prompt('Paragrafı güncelleyin');
+		  para.textContent = updatedParagraph;
+		}
+	});
+	
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Yazılan kod gözünüzü korkutmasın, sadece eklenen kısmın nasıl eklendiğine ve ne gibi bir fonksiyonellik kattığına odaklansanız yeter. Gördüğünüz gibi sayfaya bir JavaScript kodu eklemek için <code>script</code> etiketinden faydalandık ve içerisine JS kodumuzu yazdık. Bu kod ise sırasıyla şunları yapıyor:</p>
+<p>Sayfa tam olarak yüklendiğinde, yani tarayıcı body içerisindeki veriyi tam olarak okuyup yapılandırdığında, sayfa içerisindeki &ldquo;p&rdquo; etiketiyle tanımlanmış elemanlara (<em>elements</em>), bir dinleyici yerleştiriyor. Bu dinleyici, fare hareketlerini izleyip eğer sayfa içerisindeki <code>p</code> etiketiyle etiketlenmiş yazıya tıklanırsa, kullanıcıdan paragrafın yeni içeriğinin alınabileceği bir girdi (<em>input</em>) ekranı çıkarıyor. Ve bu girdi ekranına yeni bir değer girip tamamladığınızda, sayfa içerisindeki paragraf güncelleniyor.</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1640956414428/WatI_CnYS.png" alt="Screenshot from 2021-12-31 16-06-52.png"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1640956425186/qdyZcgnj4.png" alt="Screenshot from 2021-12-31 16-06-59.png"></p>
+<p>Günümüz web uygulamalarını düşününce ne kadar JS kodunun yazıldığını düşünebiliyor musunuz? Sonuç olarak JavaScript sayesinde kullanıcıyla etkileşime geçerek sayfalarımızı daha interaktif ve fonksiyonel yapabiliyoruz. Sadece sayfa içerisindeki elemanların dönüştürülmesi değil tarayıcının JavaScript&rsquo;e sağladığı bazı kütüphaneler sayesinde örneğin bilgisayara bağlı kamera ve mikrofonu kullanarak çevrimiçi görüşmeler yapabiliyoruz.</p>
+<h2 id="sonuç">Sonuç<a class="anchor" href="#sonuç">#</a></h2>
+<p>Toparlayacak olursak, aslında tarayıcının görevi web sunucusuna gönderdiğimiz isteklerin neticesinde gelen HTML, CSS ve JavaScript kodlarını yorumlayarak bir sayfa oluşturmaktır. Dolayısıyla aşağıdaki görsel, tüm bu söylenenleri özetliyor diyebiliriz.</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1640956828730/OiCUA24pO.png" alt="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#browser_security"></p>
+<p>Görsel <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#browser_security" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>kaynağı</a></p>
+<p>Bu ana kadar hep web&rsquo;in yapısından, internetin nasıl çalıştığından, tarayıcıların webdeki rolünden bahsettik. Aslında bakarsanız bir backend geliştirici olarak zamanımızın büyük çoğunluğunu sunucu üzerinde çalışan uygulamalarda harcayacağız. Dolayısıyla serimizin bir sonraki yazısına, sunucuların üstünde uygulamalarımızın çalışmasını sağlayan işletim sistemlerine değineceğiz, ve artık yavaş yavaş kollarımızı sıvayacak ve birşeyler denemeye başlayacağız.</p>
+<h2 id="kaynaklar">Kaynaklar<a class="anchor" href="#kaynaklar">#</a></h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#browser_security" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#browser_security</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS</a></li>
+</ul>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://localhost:1313/blog/backend-series/4--isletim-sistemi/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">İşletim Sistemi (Operating System) nedir?</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="http://localhost:1313/blog/backend-series/7--programlama-dilleri/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" ></span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/sogukpinarugur"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://localhost:1313/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/ugursogukpinar"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://localhost:1313/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:me@ugursogukpinar.com"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://localhost:1313/svg/email.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2024</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

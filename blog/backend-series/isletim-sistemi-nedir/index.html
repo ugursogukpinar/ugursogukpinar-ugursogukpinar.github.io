@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+  <title>İşletim Sistemi (Operating System) nedir? | ugursogukpinar</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="İşletim Sistemi (Operating System) nedir?" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@sogukpinarugur" />
+  <meta name="twitter:creator" content="https://twitter.com/sogukpinarugur" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ugursogukpinar.com\/"
+      },
+      "articleSection" : "blog",
+      "name" : "İşletim Sistemi (Operating System) nedir?",
+      "headline" : "İşletim Sistemi (Operating System) nedir?",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-01-07 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2022-01-07 00:00:00 \u002b0000 UTC",
+      "url" : "https:\/\/ugursogukpinar.com\/blog\/backend-series\/isletim-sistemi-nedir\/",
+      "wordCount" : "911",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4J1GW6MZFM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4J1GW6MZFM');
+</script>
+
+<nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">İşletim Sistemi (Operating System) nedir?</h1>
+            <time datetime="2022-01-07 00:00:00 &#43;0000 UTC" class="post__date">Jan 7 2022</time> 
+          </header>
+          <article class="post__content">
+              
+<p>Serimizin önceki yazılarında, bir backend geliştiricisi adayı olarak geliştirme yapacağımız web ortamını tanımaya ve nasıl çalıştığını anlamaya yönelmiştik. Web&rsquo;in nasıl çalıştığını anlatırken web sunucularından söz etmiştik. Bir backend geliştiricisi olarak zamanımızın büyük kısmını sunucu üstünde çalışan uygulamalar üzerinde harcayacağız. Biliyoruz ki sunucular aslında evimizdeki bilgisayarlardan çok da farklı değiller, dolayısıyla serimizin bu anından itibaren sunucuları, yani bilgisayarları nasıl programlayacağımızı, nasıl web üzerinde hizmet veren bir servis haline getireceğimizi irdeleceğiz.</p>
+<p>Peki başlığımız neden işletim sistemi? Madem ki bir bilgisayarı web üzerinde çalışan bir servis haline getirmeye çalışıyoruz, öncelikle en temelden bir yazılımın bir bilgisayar üstünde nasıl çalıştığını anlamamız gerekiyor.</p>
+<h2 id="işletim-sistemi-operating-system-nedir">İşletim Sistemi (Operating System) nedir?<a class="anchor" href="#işletim-sistemi-operating-system-nedir">#</a></h2>
+<p>İşletim sistemi en temel anlamıyla, bilgisayarınızın kaynaklarını(fiziksel donanımını) yöneterek uygulamalarınızı zahmetsizce çalıştırmaya yarayan bir yazılımdır. Dolayısıyla kullanıcı ile bilgisayar donanımı arasında bir arayüz görevi görür. Bilgisayar üzerinde yapmak istediğiniz işlemleri, donanımsal ayrıntıları ve problemleri düşünmeden yapmanızı sağlar.</p>
+<p>İşletim sistemlerinin sahip olduğu bazı özelliklere göre çeşitli türleri bulunur. Örneğin bazı işletim sistemleri sadece tek bir kullanıcıyla çalışabilirken, bazıları bir çok kullanıcının aynı anda aynı bilgisayarı kullanmasına izin verir. Bazı işletim sistemleri saniyelerin, hatta saliselerin çok önemli olduğu platformlarda, örneğin uçuş sistemlerinde veya askeri yazılımlarda çok kısa sürede cevap vermesi için özellikle tasarlanmış olabilir. Henüz bu türleri ayrıntılı bir şekilde incelememize gerek yok, ama genel olarak bilgi edinmek isterseniz <a href="https://en.wikipedia.org/wiki/Operating_system#Types_of_operating_systems" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>şuraya</a> bakabilirsiniz.</p>
+<h2 id="işletim-sistemi-fonksiyonları-nelerdir">İşletim sistemi fonksiyonları nelerdir?<a class="anchor" href="#işletim-sistemi-fonksiyonları-nelerdir">#</a></h2>
+<p>Bizim için önemli olan kısım, işletim sisteminin hangi görevleri üstlendiği, hangi problemleri çözdüğü ve bize nasıl bir avantaj sağladığıdır.</p>
+<h3 id="işlem-yönetimi-process-management">İşlem Yönetimi (Process Management)<a class="anchor" href="#işlem-yönetimi-process-management">#</a></h3>
+<p>Türkçe çevirisini kullandığımızda kelime karşılığı tam oturmasa da yazımızda işlem (process) deyince çalıştırılmaya hazır bir programın, çalışma sürecini düşünebilirsiniz.</p>
+<p>İşletim sistemi, bilgisayar açıldığı andan itibaren hem kendi görevlerini yerine getirebilmek için kendi uygulamalarını hem de sizin çalıştırmak istediğiniz uygulamaları koordine eder. Bir evdeki tüm çocuklar evdeki değerli bir oyuncak ile aynı anda oynamak istediğinde karmaşa olur ve anneler her bir çocuğa sırasıyla o oyuncakla oynamasına izin verdiğinde problem çözülür. Bir çocuk o oyuncakla oynarken, diğerleri sıranın kendisine gelmesini bekler. Çünkü anne öyle telkin etmiştir. İşte annenin burda yaptığı aslında bir süreç yönetimidir. Bilgisayar mimarisi konularına çok detaylı bir şekilde değinmeyeceğiz ancak, bir uygulamanın da oyuncakları çok değerli olan işlemci (CPU) ve hafızadır(memory). İşletim sistemi ise bu değerli olan işlemci ve hafızayı sırasıyla hangi uygulamanın kullanabileceğini belirler ve bu süreci yönetir.</p>
+<h3 id="hafıza-yönetimi-memory-management">Hafıza Yönetimi (Memory Management)<a class="anchor" href="#hafıza-yönetimi-memory-management">#</a></h3>
+<p>Önceki başlıkta belirttiğimiz gibi bilgisayar kaynaklarından en önemlileri işlemci(CPU) ve hafızadır(memory). Günümüz bilgisayalarında bu kaynaklar eskiye nazaran çok daha geniş olduğu için bilgisayar aynı anda birçok uygulamayı çalıştırabiliyor. İşletim sisteminin bu anlamda işlemin(process&rsquo;in) hafızanın hangi bölgesine erişebileceğini, ne kadarlık bir hafıza kullanabileceğini yönetmesine hafıza yönetimi diyoruz.</p>
+<h3 id="ikincil-hafıza-yönetimi-secondary-storage-management">İkincil Hafıza Yönetimi (Secondary-Storage Management)<a class="anchor" href="#ikincil-hafıza-yönetimi-secondary-storage-management">#</a></h3>
+<p>İşlemci ve hafızanın yanında bir başka kaynak olarak ikincil hafızaları (secondary storage, harddisk) söyleyebiliriz. Bu hafızalar aslında bilgisayarın kapansa bile tekrar açıldığında saklı kalan sizin dosyalarınızı içinde tutan kaynaklardır. İşletim sistemi aynı şekilde, bu dosyalara erişimden, düzenlenmesinden ve korunmasından sorumludur.</p>
+<h3 id="sürücü-yönetimi-device-management">Sürücü Yönetimi (Device Management)<a class="anchor" href="#sürücü-yönetimi-device-management">#</a></h3>
+<p>Bilgisayarın olmazsa olmaz kaynaklarının yanı sıra, bilgisayarı daha efektif kullanabilmek için dışardan dahil ettiğimiz bazı cihazlarımız bulunuyor. Bunlar ekran kartları, ses kartları, ağ cihazları, klavye, mouse, hoparlör, kamera gibi birçok cihaz olabilir. İşte bu cihazların da uygulamalarımız tarafından yönetilebilmesi için, işletim sistemi yine bize bir arayüz sağlıyor.</p>
+<p>Bunların yanında, çok kullanıcılı sistemlerde kullanıcı kontrolleri, hangi kullanıcının hangi işlemleri ne kadar süre çalıştırdığı, ne zaman giriş yapıldığı ve benzeri konularda işletim sisteminin sorumluluğunda olabilir. Yukarda belirttiklerimiz bizim için önemli olan ve hemen hemen işletim sistemlerinin temel olarak desteklediği fonksiyonlardır.</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1641505929392/z9Cyyd6eP.webp" alt="011819_0753_OperatingSy4.webp"></p>
+<p>Görsel <a href="https://www.guru99.com/images/1/011819_0753_OperatingSy4.png" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>kaynak</a></p>
+<h2 id="kernel-nedir">Kernel nedir?<a class="anchor" href="#kernel-nedir">#</a></h2>
+<p>İşletim sistemi söz konusu olduğunda, <em>kernel</em> konusuna değinmezsek olmaz. İşletim sistemini tanımlarken donanım ile yazılım arasında duran ve işlemlerimizi donanım yönetimini düşünmeden yapmamızı sağlayan yazılım olarak tanımlamıştık. Günümüz işletim sistemlerini düşündüğümüzde sadece donanımı yönetmekten öte, içerisinde son kullanıcılar (bizler) için bir çok uygulamayı içinde barındırıyor. Ancak &ldquo;kernel&rdquo; dediğimiz zaman tam anlamıyla işletim sisteminin çekirdeği diyebileceğimiz, işletim sisteminin asıl görevi olan donanım yönetimi kısmından söz ettiğimizi düşünebilirsiniz.</p>
+<blockquote>
+<p>Linux işletim sistemidir veya değildir diye uzunca bir zamandır süren bir tartışma söz konusu. Linux, Linus Torvalds tarafından geliştirmeye başlanan bir işletim sistemi çekirdeğidir. Ancak bu çekirdek tek başına kullanılabilir bir yapı değildir. Bu çekirdek daha sonradan Richard Stallman&rsquo;ın öncü olduğu GNU hareketiyle birleştirilerek GNU/Linux işletim sistemi oluşturulmuştur. Ancak insanlar bu GNU/Linux demek yerine sadece Linux demeye devam ediyorlar. Bugün bir çok işletim sisteminin temelinde(örneğin Android OS) bu hareket neticesinde oluşturulan GNU/Linux işletim sistemi bulunuyor. Daha sonradan Debian-Linux, SUSE-Linux gibi bir çok farklı işletim sistemi ortaya çıktığı için, şahsen ben de Linux&rsquo;un bir işletim sistemi çekirdeğini ifade ettiğini ve Linux dağıtımların bu çekirdeği kullanan işletim sistemleri olduğunu düşünüyorum.</p>
+</blockquote>
+<h2 id="kabul-shell-nedir">Kabul (Shell) nedir?<a class="anchor" href="#kabul-shell-nedir">#</a></h2>
+<p>Kabuk, aslında adından da anlaşılacağı üzere işletim sistemini kullanabilmemiz için bize sunduğu alet çantası olarak düşünebilirsiniz. Kabuk sayesinde işlemlerimizi ve dosyalarımızı yönetebilir, diğer programlara veya kernel&rsquo;e komutlar gönderebiliriz. Kabuk onu kullanacak kişiler için bir programlama dili içerir. Örneğin Linux çekirdeğinin kabuğu &ldquo;bash&rdquo; programlama dilini yorumlar ve çalıştırır. Kabuk ile bu programlama dilini kullanarak anlaşabilir, kabuğun üstüne uygulamalar geliştirebiliriz.</p>
+<h2 id="terminal-nedir">Terminal nedir?<a class="anchor" href="#terminal-nedir">#</a></h2>
+<p>Terminal ise işletim sistemi kabuğunu kullanabilmemiz için yazılan, genelde filmlerin hacker sahnelerinde siyah bir pencere içerisinde yeşil yazıların aktığı, uygulamalardır. Büyük sunucuları düşündüğünüzde veya eski fotoğraflardan da görebileceğiniz, makinelerin yanlarında ufak bir klavye ve ekran bulunur ve içerisinde de sunucuyu yönetmek için komutlar gönderilebilen bir terminal(uçbirim) uygulaması çalışır. Netice itibariyle terminal kullanıcıdan aldığı komutları işletim sistemi kabuğuna aktaran bir yazılımdır.</p>
+<p><img src="https://media.giphy.com/media/iGpHt2H22k1orjgT9b/giphy.gif" alt="https://media.giphy.com/media/iGpHt2H22k1orjgT9b/giphy.gif"></p>
+<h2 id="sonuç">Sonuç<a class="anchor" href="#sonuç">#</a></h2>
+<p>İşletim sistemleri bizim ilerde yazacağımız uygulamalara tabiri caizse annelik yapacağı için, uygulamamızın çalışırken geçirdiği süreçleri anlamak açısından önem kazanıyor. Bizim buradaki amacımız kavramları oturtmak ve işletim sisteminin nasıl çalıştığına dair (olağanüstü yüzeysel bir şekilde) bilgi sahibi olmak.</p>
+<p>Bir sonraki yazımızda, bir terminalde deneyebileceğimiz basit komutları ve nasıl kullanıldıklarını göreceğiz.</p>
+<h2 id="kaynaklar">Kaynaklar<a class="anchor" href="#kaynaklar">#</a></h2>
+<ul>
+<li><a href="https://www.guru99.com/operating-system-tutorial.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://www.guru99.com/operating-system-tutorial.html</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Operating_system#Types_of_operating_systems" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://en.wikipedia.org/wiki/Operating_system#Types_of_operating_systems</a></li>
+<li><a href="https://www.ibm.com/docs/en/aix/7.2?topic=administration-operating-system-shells" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://www.ibm.com/docs/en/aix/7.2?topic=administration-operating-system-shells</a></li>
+</ul>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://ugursogukpinar.com/tags/backend/">backend</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://ugursogukpinar.com/blog/backend-series/html-css-javascript/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">HTML, CSS ve JavaScript</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="https://ugursogukpinar.com/blog/backend-series/basit-terminal-kullanimi/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Basit Terminal Kullanımı</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/sogukpinarugur"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/ugursogukpinar"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:me@ugursogukpinar.com"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/email.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2024</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+           <div class="toc-post-title">İşletim Sistemi (Operating System) nedir?</div> 
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#işletim-sistemi-operating-system-nedir">İşletim Sistemi (Operating System) nedir?</a></li>
+    <li><a href="#işletim-sistemi-fonksiyonları-nelerdir">İşletim sistemi fonksiyonları nelerdir?</a>
+      <ul>
+        <li><a href="#işlem-yönetimi-process-management">İşlem Yönetimi (Process Management)</a></li>
+        <li><a href="#hafıza-yönetimi-memory-management">Hafıza Yönetimi (Memory Management)</a></li>
+        <li><a href="#ikincil-hafıza-yönetimi-secondary-storage-management">İkincil Hafıza Yönetimi (Secondary-Storage Management)</a></li>
+        <li><a href="#sürücü-yönetimi-device-management">Sürücü Yönetimi (Device Management)</a></li>
+      </ul>
+    </li>
+    <li><a href="#kernel-nedir">Kernel nedir?</a></li>
+    <li><a href="#kabul-shell-nedir">Kabul (Shell) nedir?</a></li>
+    <li><a href="#terminal-nedir">Terminal nedir?</a></li>
+    <li><a href="#sonuç">Sonuç</a></li>
+    <li><a href="#kaynaklar">Kaynaklar</a></li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

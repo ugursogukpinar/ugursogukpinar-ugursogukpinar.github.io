@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#Backendseries on ugursogukpinar</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in #Backendseries on ugursogukpinar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Thu, 07 Mar 2024 15:43:08 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/backend-series/1--internet-nedir-ve-nasil-calisir/</link>
+      <pubDate>Thu, 07 Mar 2024 15:43:08 +0300</pubDate>
+      <guid>http://localhost:1313/blog/backend-series/1--internet-nedir-ve-nasil-calisir/</guid>
+      <description>İnternet nedir? Aslında internetin tanımını yapmadan evvel ağ tanımını yapmalıyız. Ağ birden fazla bilgisayarın birbirlerine bağlanarak bilgi alışverişinde bulunabildikleri ortama denir.&#xA;Dolayısıyla en basit ağı şu şekilde gösterebiliriz:&#xA;İnternet ise dünya üzerindeki ağların en büyüğüne verilen isimdir. Yani internet birçok bilgisayarın kablolar veya uzaydaki uydular vasıtasıyla bir şekilde birbirleriyle haberleşebildiği en büyük ağın adıdır.&#xA;Peki dünya üzerinde milyarlarca cihaz internete bağlı. Yukardaki şekle göre bütün cihazları birbirine bağlamaya kalkarsak büyük bir karmaşanın ortasında kalıyoruz.</description>
+    </item>
+  </channel>
+</rss>
