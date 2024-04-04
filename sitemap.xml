@@ -2,39 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ugursogukpinar.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/tags/backend/</loc>
+    <loc>http://localhost:1313/blog/tr/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/blog/</loc>
+    <loc>http://localhost:1313/tags/backend/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/blog/backend-series/programlama-dilleri/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/tags/</loc>
+    <loc>http://localhost:1313/blog/tr/backend-series/programlama-dilleri/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/blog/backend-series/basit-terminal-kullanimi-2/</loc>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2022-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/tr/backend-series/basit-terminal-kullanimi-2/</loc>
     <lastmod>2022-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/blog/backend-series/basit-terminal-kullanimi/</loc>
+    <loc>http://localhost:1313/blog/tr/backend-series/basit-terminal-kullanimi/</loc>
     <lastmod>2022-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/blog/backend-series/isletim-sistemi-nedir/</loc>
+    <loc>http://localhost:1313/blog/tr/backend-series/isletim-sistemi-nedir/</loc>
     <lastmod>2022-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/blog/backend-series/html-css-javascript/</loc>
+    <loc>http://localhost:1313/blog/tr/backend-series/html-css-javascript/</loc>
     <lastmod>2021-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/blog/backend-series/web-nedir-ve-nasil-calisir/</loc>
+    <loc>http://localhost:1313/blog/tr/backend-series/web-nedir-ve-nasil-calisir/</loc>
     <lastmod>2021-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/blog/backend-series/internet-nedir-ve-nasil-calisir/</loc>
+    <loc>http://localhost:1313/blog/tr/backend-series/internet-nedir-ve-nasil-calisir/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ugursogukpinar.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
