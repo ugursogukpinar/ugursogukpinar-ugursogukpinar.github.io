@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backend on ugursogukpinar</title>
-    <link>http://localhost:1313/tags/backend/</link>
+    <link>https://ugursogukpinar.com/tags/backend/</link>
     <description>Recent content in Backend on ugursogukpinar</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
     <lastBuildDate>Wed, 21 Sep 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/backend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ugursogukpinar.com/tags/backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Programlama Dilleri</title>
-      <link>http://localhost:1313/blog/tr/backend-series/programlama-dilleri/</link>
+      <link>https://ugursogukpinar.com/blog/backend-series/programlama-dilleri/</link>
       <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tr/backend-series/programlama-dilleri/</guid>
-      <description>Serimizin bu bölümünde programlama dillerini anlamaya ve sınıflandırmaya çalışacağız.&#xA;Programlama dili nedir? Programlama dili için web&amp;rsquo;de birçok tanım bulabilirsiniz ancak ,kendimce, ben elimizdeki donanımı (hardware) çeşitli problemlerin çözümünde kullanmak üzere uygun hale getiren komutlar dizisi olarak görüyorum. Aslında sadece dilin tanımını düşünecek olursak, dil insanların birbirleriyle anlaşabilmek için geliştirdiği bir iletişim yöntemidir diyebiliriz. Aynı açıdan programlama dilleri de donanım ile bizim aramızdaki iletişim yöntemidir. Programlama dillerini, doğal dillerden ayıran en önemli özellik ise kurallarının kesin bir biçimde belirgin olması ve bu kuralların dışına çıkıldığında (sentaks bozulduğunda) donanımın bunu anlamayacak olmasıdır.</description>
+      <guid>https://ugursogukpinar.com/blog/backend-series/programlama-dilleri/</guid>
+      <description>&lt;p&gt;Serimizin bu bölümünde programlama dillerini anlamaya ve sınıflandırmaya çalışacağız.&lt;/p&gt;&#xA;&lt;h3 id=&#34;programlama-dili-nedir&#34;&gt;Programlama dili nedir?&lt;/h3&gt;&#xA;&lt;p&gt;Programlama dili için web&amp;rsquo;de birçok tanım bulabilirsiniz ancak ,kendimce, ben elimizdeki donanımı (hardware) çeşitli problemlerin çözümünde kullanmak üzere uygun hale getiren komutlar dizisi olarak görüyorum. Aslında sadece &lt;em&gt;dilin&lt;/em&gt; tanımını düşünecek olursak, dil insanların birbirleriyle anlaşabilmek için geliştirdiği bir iletişim yöntemidir diyebiliriz. Aynı açıdan programlama dilleri de donanım ile bizim aramızdaki iletişim yöntemidir. Programlama dillerini, doğal dillerden ayıran en önemli özellik ise kurallarının kesin bir biçimde belirgin olması ve bu kuralların dışına çıkıldığında (&lt;strong&gt;sentaks&lt;/strong&gt; bozulduğunda) donanımın bunu anlamayacak olmasıdır. Doğal dillerde ise konuşma esnasında yüzlerce hata yapıyoruz ancak karşımızdaki insan bizi bir şekilde anlayabiliyor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basit Terminal Kullanımı 2</title>
-      <link>http://localhost:1313/blog/tr/backend-series/basit-terminal-kullanimi-2/</link>
+      <link>https://ugursogukpinar.com/blog/backend-series/basit-terminal-kullanimi-2/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tr/backend-series/basit-terminal-kullanimi-2/</guid>
-      <description>Kısa bir aradan sonra serimize kaldığımız yerden devam ediyoruz. Bir önceki yazımızda basit olarak terminal kullanımından bahsetmiştik. Terminal kullanarak bilgisayarınızda, özellikle dosya sisteminizde yapabileceğiniz çeşitli aksiyonları göstermiştik. Başlangıçta benzer aksiyonları arayüz üzerinden yapabildiğimiz için bu komutlar size basit ve kullanışsız gelebilir. Bu bölümde ise oldukça basit olan bu komutları birleştirerek daha güçlü betikler hazırlayacağız.&#xA;Çalışma ortamının hazırlanması Öncelikle bu bölümdeki komutları deneyebilmeniz için bir laboratuvar ortamı yaratmanız gerekiyor. Bunun için bilgisayarımda ~/shell-data/texts isminde bir klasör oluşturdum, ardından bu klasörde içerisinde farklı sayıda satır bulunan 10 adet dosya oluşturdum.</description>
+      <guid>https://ugursogukpinar.com/blog/backend-series/basit-terminal-kullanimi-2/</guid>
+      <description>&lt;p&gt;Kısa bir aradan sonra serimize kaldığımız yerden devam ediyoruz. Bir önceki yazımızda basit olarak terminal kullanımından bahsetmiştik. Terminal kullanarak bilgisayarınızda, özellikle dosya sisteminizde yapabileceğiniz çeşitli aksiyonları göstermiştik. Başlangıçta benzer aksiyonları arayüz üzerinden yapabildiğimiz için bu komutlar size basit ve kullanışsız gelebilir. Bu bölümde ise oldukça basit olan bu komutları birleştirerek daha güçlü betikler hazırlayacağız.&lt;/p&gt;&#xA;&lt;h2 id=&#34;çalışma-ortamının-hazırlanması&#34;&gt;Çalışma ortamının hazırlanması&lt;/h2&gt;&#xA;&lt;p&gt;Öncelikle bu bölümdeki komutları deneyebilmeniz için bir laboratuvar ortamı yaratmanız gerekiyor. Bunun için bilgisayarımda &lt;code&gt;~/shell-data/texts&lt;/code&gt; isminde bir klasör oluşturdum, ardından bu klasörde içerisinde farklı sayıda satır bulunan 10 adet dosya oluşturdum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basit Terminal Kullanımı</title>
-      <link>http://localhost:1313/blog/tr/backend-series/basit-terminal-kullanimi/</link>
+      <link>https://ugursogukpinar.com/blog/backend-series/basit-terminal-kullanimi/</link>
       <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tr/backend-series/basit-terminal-kullanimi/</guid>
-      <description>Serimizin bu noktasında, Linux tabanlı işletim sistemlerinde kullanabileceğiniz, ilerleyen süreçlerde sıklıkla ihtiyacınız olacak olan bazı komutlardan bahsedeceğiz. Her ne kadar Linux tabanlı işletim sistemlerinde desek de bahsedeceğimiz komutlar çok genel olduğu için diğer işletim sistemlerinde de aynılarını veya benzer komutları bulabilirsiniz.&#xA;Terminal seçimi Öncelikle hemen hemen tüm işletim sistemleri kendi içlerinde bir terminal emülatörü bulundurur, ancak şahsen sundukları ek özellikler nedeniyle ben ayrıca bir emülatör yüklüyorum.&#xA;Daha önce kullandığım terminal emülatörleri.</description>
+      <guid>https://ugursogukpinar.com/blog/backend-series/basit-terminal-kullanimi/</guid>
+      <description>&lt;p&gt;Serimizin bu noktasında, Linux tabanlı işletim sistemlerinde kullanabileceğiniz, ilerleyen süreçlerde sıklıkla ihtiyacınız olacak olan bazı komutlardan bahsedeceğiz. Her ne kadar Linux tabanlı işletim sistemlerinde desek de bahsedeceğimiz komutlar çok genel olduğu için diğer işletim sistemlerinde de aynılarını veya benzer komutları bulabilirsiniz.&lt;/p&gt;&#xA;&lt;h2 id=&#34;terminal-seçimi&#34;&gt;Terminal seçimi&lt;/h2&gt;&#xA;&lt;p&gt;Öncelikle hemen hemen tüm işletim sistemleri kendi içlerinde bir terminal emülatörü bulundurur, ancak şahsen sundukları ek özellikler nedeniyle ben ayrıca bir emülatör yüklüyorum.&lt;/p&gt;&#xA;&lt;p&gt;Daha önce kullandığım terminal emülatörleri.&lt;/p&gt;</description>
     </item>
     <item>
       <title>İşletim Sistemi (Operating System) nedir?</title>
-      <link>http://localhost:1313/blog/tr/backend-series/isletim-sistemi-nedir/</link>
+      <link>https://ugursogukpinar.com/blog/backend-series/isletim-sistemi-nedir/</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tr/backend-series/isletim-sistemi-nedir/</guid>
-      <description>Serimizin önceki yazılarında, bir backend geliştiricisi adayı olarak geliştirme yapacağımız web ortamını tanımaya ve nasıl çalıştığını anlamaya yönelmiştik. Web&amp;rsquo;in nasıl çalıştığını anlatırken web sunucularından söz etmiştik. Bir backend geliştiricisi olarak zamanımızın büyük kısmını sunucu üstünde çalışan uygulamalar üzerinde harcayacağız. Biliyoruz ki sunucular aslında evimizdeki bilgisayarlardan çok da farklı değiller, dolayısıyla serimizin bu anından itibaren sunucuları, yani bilgisayarları nasıl programlayacağımızı, nasıl web üzerinde hizmet veren bir servis haline getireceğimizi irdeleceğiz.&#xA;Peki başlığımız neden işletim sistemi?</description>
+      <guid>https://ugursogukpinar.com/blog/backend-series/isletim-sistemi-nedir/</guid>
+      <description>&lt;p&gt;Serimizin önceki yazılarında, bir backend geliştiricisi adayı olarak geliştirme yapacağımız web ortamını tanımaya ve nasıl çalıştığını anlamaya yönelmiştik. Web&amp;rsquo;in nasıl çalıştığını anlatırken web sunucularından söz etmiştik. Bir backend geliştiricisi olarak zamanımızın büyük kısmını sunucu üstünde çalışan uygulamalar üzerinde harcayacağız. Biliyoruz ki sunucular aslında evimizdeki bilgisayarlardan çok da farklı değiller, dolayısıyla serimizin bu anından itibaren sunucuları, yani bilgisayarları nasıl programlayacağımızı, nasıl web üzerinde hizmet veren bir servis haline getireceğimizi irdeleceğiz.&lt;/p&gt;&#xA;&lt;p&gt;Peki başlığımız neden işletim sistemi? Madem ki bir bilgisayarı web üzerinde çalışan bir servis haline getirmeye çalışıyoruz, öncelikle en temelden bir yazılımın bir bilgisayar üstünde nasıl çalıştığını anlamamız gerekiyor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTML, CSS ve JavaScript</title>
-      <link>http://localhost:1313/blog/tr/backend-series/html-css-javascript/</link>
+      <link>https://ugursogukpinar.com/blog/backend-series/html-css-javascript/</link>
       <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tr/backend-series/html-css-javascript/</guid>
-      <description>Bir önceki yazımızda web&amp;rsquo;in temel taşlarına ve internet ağı üstünde nasıl çalıştığına değinmiştik. Bu bölümde ise web sayfalarının nasıl oluştuğunu ve tarayıcıların sayfaları nasıl yorumladığını inceleyeceğiz. Her ne kadar bu konular frontend geliştiricilerin ilgi alanında olsa da bir backend geliştirici olarak sayfaların nasıl çalıştığını bilmek önemli.&#xA;Backend&amp;lsquo;i sunucu üzerinde çalışan her türlü uygulama olarak, Frontend&amp;lsquo;i ise tarayıcı üzerinde çalışan her türlü uygulama olarak sınıflandırabilirsiniz.&#xA;HTML (Hypertext Markup Language) Aslında bir önceki yazımızda web&amp;rsquo;in temel taşlarını anlatırken bu konuya değinmiştik, burada ise HTML ile bir sayfadaki verilerin nasıl yapısallaştırıldığını inceleyeceğiz.</description>
+      <guid>https://ugursogukpinar.com/blog/backend-series/html-css-javascript/</guid>
+      <description>&lt;p&gt;Bir önceki yazımızda web&amp;rsquo;in temel taşlarına ve internet ağı üstünde nasıl çalıştığına değinmiştik. Bu bölümde ise web sayfalarının nasıl oluştuğunu ve tarayıcıların sayfaları nasıl yorumladığını inceleyeceğiz. Her ne kadar bu konular frontend geliştiricilerin ilgi alanında olsa da bir backend geliştirici olarak sayfaların nasıl çalıştığını bilmek önemli.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Backend&lt;/em&gt;&amp;lsquo;i sunucu üzerinde çalışan her türlü uygulama olarak, &lt;em&gt;Frontend&lt;/em&gt;&amp;lsquo;i ise tarayıcı üzerinde çalışan her türlü uygulama olarak sınıflandırabilirsiniz.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;html-hypertext-markup-language&#34;&gt;HTML (Hypertext Markup Language)&lt;/h2&gt;&#xA;&lt;p&gt;Aslında bir önceki yazımızda web&amp;rsquo;in temel taşlarını anlatırken bu konuya değinmiştik, burada ise HTML ile bir sayfadaki verilerin nasıl yapısallaştırıldığını inceleyeceğiz. Buradaki amacımız size HTML öğretmek değil, sadece tarayıcıların HTML kodunu nasıl yorumladığını açıklamak olacak. HTML ile ilgili herşeyi öğrenmek için &lt;a href=&#34;https://www.w3schools.com/html/&#34; &#xA;  &#xA;   target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; &#xA;&gt;şuraya&lt;/a&gt; bakabilirsiniz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Web nedir ve nasıl çalışır?</title>
-      <link>http://localhost:1313/blog/tr/backend-series/web-nedir-ve-nasil-calisir/</link>
+      <link>https://ugursogukpinar.com/blog/backend-series/web-nedir-ve-nasil-calisir/</link>
       <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tr/backend-series/web-nedir-ve-nasil-calisir/</guid>
-      <description>Bir önceki yazımızda internetin ne olduğuna ve nasıl çalıştığına değinmiştik. Birçok kişi interneti ve web&amp;rsquo;i aynı anlamda kullanmasına rağmen aslında durum böyle değil. Bu yazımızda web&amp;rsquo;in ne olduğunu ve internet ile nasıl bir ilişki içerisinde olduğuna değineceğiz.&#xA;World Wide Web, WWW veya W3 nedir? Web aslında internet ağı üzerinde çalışan, bilginin (web sayfalarının) kolaylıkla isteyen kişiler arasında dağıtılması için tasarlanmış bir uygulamadır. İnternet cihazların birbirine bağlı olduğu ağın, fiziksel alt yapının, adı iken web internet ağını kullanarak çalışan uygulamalardan sadece bir tanesidir.</description>
+      <guid>https://ugursogukpinar.com/blog/backend-series/web-nedir-ve-nasil-calisir/</guid>
+      <description>&lt;p&gt;Bir önceki yazımızda internetin ne olduğuna ve nasıl çalıştığına değinmiştik. Birçok kişi interneti ve web&amp;rsquo;i aynı anlamda kullanmasına rağmen aslında durum böyle değil. Bu yazımızda web&amp;rsquo;in ne olduğunu ve internet ile nasıl bir ilişki içerisinde olduğuna değineceğiz.&lt;/p&gt;&#xA;&lt;h2 id=&#34;world-wide-web-www-veya-w3-nedir&#34;&gt;World Wide Web, WWW veya W3 nedir?&lt;/h2&gt;&#xA;&lt;p&gt;Web aslında internet ağı üzerinde çalışan, bilginin (web sayfalarının) kolaylıkla isteyen kişiler arasında dağıtılması için tasarlanmış bir uygulamadır. İnternet cihazların birbirine bağlı olduğu ağın, fiziksel alt yapının, adı iken web internet ağını kullanarak çalışan uygulamalardan sadece bir tanesidir.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Internet nedir ve nasıl çalışır?</title>
-      <link>http://localhost:1313/blog/tr/backend-series/internet-nedir-ve-nasil-calisir/</link>
+      <link>https://ugursogukpinar.com/blog/backend-series/internet-nedir-ve-nasil-calisir/</link>
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tr/backend-series/internet-nedir-ve-nasil-calisir/</guid>
-      <description>İnternet nedir? Aslında internetin tanımını yapmadan evvel ağ tanımını yapmalıyız. Ağ birden fazla bilgisayarın birbirlerine bağlanarak bilgi alışverişinde bulunabildikleri ortama denir.&#xA;Dolayısıyla en basit ağı şu şekilde gösterebiliriz:&#xA;İnternet ise dünya üzerindeki ağların en büyüğüne verilen isimdir. Yani internet birçok bilgisayarın kablolar veya uzaydaki uydular vasıtasıyla bir şekilde birbirleriyle haberleşebildiği en büyük ağın adıdır.&#xA;Peki dünya üzerinde milyarlarca cihaz internete bağlı. Yukardaki şekle göre bütün cihazları birbirine bağlamaya kalkarsak büyük bir karmaşanın ortasında kalıyoruz.</description>
+      <guid>https://ugursogukpinar.com/blog/backend-series/internet-nedir-ve-nasil-calisir/</guid>
+      <description>&lt;h2 id=&#34;internet-nedir&#34;&gt;İnternet nedir?&lt;/h2&gt;&#xA;&lt;p&gt;Aslında internetin tanımını yapmadan evvel &lt;strong&gt;ağ&lt;/strong&gt; tanımını yapmalıyız. Ağ birden fazla bilgisayarın birbirlerine bağlanarak bilgi alışverişinde bulunabildikleri ortama denir.&lt;/p&gt;&#xA;&lt;p&gt;Dolayısıyla en basit ağı şu şekilde gösterebiliriz:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1640685790549/tbU4021T0.jpeg&#34; alt=&#34;simple-network.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;İnternet ise dünya üzerindeki ağların en büyüğüne verilen isimdir. Yani internet birçok bilgisayarın kablolar veya uzaydaki uydular vasıtasıyla bir şekilde birbirleriyle haberleşebildiği en büyük ağın adıdır.&lt;/p&gt;&#xA;&lt;p&gt;Peki dünya üzerinde milyarlarca cihaz internete bağlı. Yukardaki şekle göre bütün cihazları birbirine bağlamaya kalkarsak büyük bir karmaşanın ortasında kalıyoruz. Milyarlarca cihaz bir yana sadece 5 adet cihazı bile birbirine bağlamaya kalksak, her cihazdan diğerlerine 4&amp;rsquo;er adet bağlantı gerekiyor.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
