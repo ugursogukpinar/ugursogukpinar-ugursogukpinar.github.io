@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Life on ugursogukpinar</title>
-    <link>https://ugursogukpinar.com/tags/life/</link>
-    <description>Recent content in Life on ugursogukpinar</description>
+    <title>Thoughts on ugursogukpinar</title>
+    <link>https://ugursogukpinar.com/tags/thoughts/</link>
+    <description>Recent content in Thoughts on ugursogukpinar</description>
     <generator>Hugo</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
     <lastBuildDate>Thu, 31 Oct 2024 16:36:39 +0300</lastBuildDate>
-    <atom:link href="https://ugursogukpinar.com/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ugursogukpinar.com/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Çalınan Dikkat: Dikkatimizi Neden Kaybettik ve Onu Nasıl Geri Kazanırız?</title>
       <link>https://ugursogukpinar.com/blog/calinan-dikkat/</link>
       <pubDate>Thu, 31 Oct 2024 16:36:39 +0300</pubDate>
       <guid>https://ugursogukpinar.com/blog/calinan-dikkat/</guid>
       <description>&lt;p&gt;Johann Hari&amp;rsquo;nin &lt;em&gt;Çalınan Dikkat&lt;/em&gt; kitabı, dikkat dağınıklığımızın arkasındaki nedenleri ve çözüm yollarını araştıran etkileyici bir eser. Kitabı okurken beni en çok etkileyen bazı başlıklardan ve sosyal medyanın günlük hayatımızdaki yıkıcı etkilerinden bahsetmek istiyorum.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;sosyal-medyanın-dikkatimiz-üzerindeki-etkisi&#34;&gt;Sosyal Medyanın Dikkatimiz Üzerindeki Etkisi&lt;/h2&gt;&#xA;&lt;p&gt;Hari, sosyal medyanın başta dikkatimizi kontrol altına almak için nasıl bir “savaş alanı” yarattığını vurguluyor. Bu platformlar, bizi mümkün olduğunca uzun süre ekranda tutmak için tasarlanmış. Bildirimler, sonsuz kaydırma özelliği, beğeni ve yorumlar; hepsi dikkatimizi her an çekmeye hazır. Düşünsenize, bir an için odaklanmaya çalışıyorsunuz ve bir anda gelen bir bildirim tüm odağınızı bölüyor. Peki bu sürekli kesintiler gerçekten neye mal oluyor?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sosyal Medyadan Uzaklaşma</title>
-      <link>https://ugursogukpinar.com/blog/sosyal-medya/</link>
-      <pubDate>Sun, 22 Sep 2024 13:08:07 +0300</pubDate>
-      <guid>https://ugursogukpinar.com/blog/sosyal-medya/</guid>
-      <description>&lt;p&gt;Uzun süredir ara ara yapmaya çalıştığım ama tam olarak başarılı olamadığım bir konuyu bugün tekrardan deniyorum. Uzunca bir süredir dikkatimi tek bir konuya odaklayamıyordum, uzun süreli okumaları neredeyse unutmuştum. Bir süredir elime telefon aldığım her an, telefonu kenara bırakıp 1-2 cümle bile olsa bir kitap okumayı deniyordum. Fark ettim ki son 4 haftada okumak istediğim 3 kitabı bitirmişim. Sürekli yoğun bir haber akışı içerisinde olmak insanı asıl odaklanmak istediği veya asıl okumak isteyeceği haberlerden/konulardan uzaklaştırıyor.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

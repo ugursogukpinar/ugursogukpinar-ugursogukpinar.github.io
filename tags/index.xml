@@ -7,13 +7,27 @@
     <generator>Hugo</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Sun, 22 Sep 2024 13:08:07 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2024 16:36:39 +0300</lastBuildDate>
     <atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Books</title>
+      <link>https://ugursogukpinar.com/tags/books/</link>
+      <pubDate>Thu, 31 Oct 2024 16:36:39 +0300</pubDate>
+      <guid>https://ugursogukpinar.com/tags/books/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Life</title>
       <link>https://ugursogukpinar.com/tags/life/</link>
-      <pubDate>Sun, 22 Sep 2024 13:08:07 +0300</pubDate>
+      <pubDate>Thu, 31 Oct 2024 16:36:39 +0300</pubDate>
       <guid>https://ugursogukpinar.com/tags/life/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thoughts</title>
+      <link>https://ugursogukpinar.com/tags/thoughts/</link>
+      <pubDate>Thu, 31 Oct 2024 16:36:39 +0300</pubDate>
+      <guid>https://ugursogukpinar.com/tags/thoughts/</guid>
       <description></description>
     </item>
     <item>
