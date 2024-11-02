@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Thu, 31 Oct 2024 16:36:39 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 02 Nov 2024 21:26:08 +0300</lastBuildDate>
     <atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend</title>
+      <link>https://ugursogukpinar.com/tags/backend/</link>
+      <pubDate>Sat, 02 Nov 2024 21:26:08 +0300</pubDate>
+      <guid>https://ugursogukpinar.com/tags/backend/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Books</title>
       <link>https://ugursogukpinar.com/tags/books/</link>
@@ -35,13 +42,6 @@
       <link>https://ugursogukpinar.com/tags/socialmedia/</link>
       <pubDate>Sun, 22 Sep 2024 13:08:07 +0300</pubDate>
       <guid>https://ugursogukpinar.com/tags/socialmedia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend</title>
-      <link>https://ugursogukpinar.com/tags/backend/</link>
-      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://ugursogukpinar.com/tags/backend/</guid>
       <description></description>
     </item>
   </channel>
