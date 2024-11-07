@@ -7,13 +7,20 @@
     <generator>Hugo</generator>
     <language>tr-TR</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Sat, 02 Nov 2024 21:26:08 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 07 Nov 2024 13:40:59 +0300</lastBuildDate>
     <atom:link href="https://ugursogukpinar.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backend</title>
       <link>https://ugursogukpinar.com/tags/backend/</link>
-      <pubDate>Sat, 02 Nov 2024 21:26:08 +0300</pubDate>
+      <pubDate>Thu, 07 Nov 2024 13:40:59 +0300</pubDate>
       <guid>https://ugursogukpinar.com/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://ugursogukpinar.com/tags/database/</link>
+      <pubDate>Thu, 07 Nov 2024 13:40:59 +0300</pubDate>
+      <guid>https://ugursogukpinar.com/tags/database/</guid>
       <description></description>
     </item>
     <item>

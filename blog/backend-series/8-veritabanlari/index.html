@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+  <title>Veritabanları (Databases) | ugursogukpinar</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="database, , database , scaling, , database , types">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ugursogukpinar.com\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Veritabanları (Databases)",
+      "headline" : "Veritabanları (Databases)",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2024",
+      "datePublished": "2024-11-07 13:40:59 \u002b0300 \u002b03",
+      "dateModified" : "2024-11-07 13:40:59 \u002b0300 \u002b03",
+      "url" : "https:\/\/ugursogukpinar.com\/blog\/backend-series\/8-veritabanlari\/",
+      "wordCount" : "1261",
+      "keywords" : ["database,", "database", "scaling,", "database", "types", "Blog"]
+    }
+  
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4J1GW6MZFM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4J1GW6MZFM');
+</script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">anasayfa</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Veritabanları (Databases)</h1>
+            <time datetime="2024-11-07 13:40:59 &#43;0300 &#43;03" class="post__date">Nov 7 2024</time> 
+          </header>
+          <article class="post__content">
+              
+<p>Bir yazılım projesinde, verileri organize bir şekilde saklayarak gerektiğinde bu verilere ulaşmak için veritabanları kullanılır. Veritabanları, verilerin güvenilir bir şekilde tutulmasını sağlarken veri erişimini hızlandırır ve verilerin güvenliğini sağlar. Peki, veritabanları nasıl çalışır ve hangi türleri vardır?</p>
+<h2 id="veritabanı-türleri">Veritabanı Türleri<a class="anchor" href="#veritabanı-türleri">#</a></h2>
+<p>Veritabanları genel olarak <strong>SQL</strong> (yapısal) ve <strong>NoSQL</strong> (yapısal olmayan) olmak üzere iki ana türe ayrılır. Bu iki tür arasındaki temel farklar, veri organizasyonu ve sorgulama şekillerinde görülür.</p>
+<h3 id="1-sql-veritabanları">1. SQL Veritabanları<a class="anchor" href="#1-sql-veritabanları">#</a></h3>
+<p>SQL veritabanları, verilerin tablo yapısında saklandığı ve <strong>Structured Query Language (SQL)</strong> ile sorgulandığı ilişkisel veritabanlarıdır. Veriler, satırlar ve sütunlar halinde düzenlenir ve tablolar arasında güçlü ilişkiler kurulur.</p>
+<p><strong>SQL Veritabanı Şema ve Sorgu Örneği</strong>
+Örneğin, bir e-ticaret sitesi için ürünler ve siparişler tablolarını içeren bir şema:</p>
+<pre><code class="language-sql">-- Ürünler tablosu
+CREATE TABLE products (
+    product_id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    price DECIMAL(10, 2),
+    stock INT
+);
+
+-- Siparişler tablosu
+CREATE TABLE orders (
+    order_id SERIAL PRIMARY KEY,
+    product_id INT REFERENCES products(product_id),
+    quantity INT,
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+</code></pre>
+<p>Bu şema ile örnek bir sorgu:</p>
+<pre><code class="language-sql">-- Fiyatı 50’den büyük ürünleri getirme
+SELECT name, price 
+FROM products 
+WHERE price &gt; 50;
+
+-- Siparişlerin detaylarını ürün bilgileriyle birlikte getirme
+SELECT o.order_id, p.name AS product_name, o.quantity, o.order_date
+FROM orders o
+JOIN products p ON o.product_id = p.product_id;
+</code></pre>
+<p>SQL veritabanları, güçlü veri bütünlüğü ve ilişkisel yapı gerektiren durumlarda kullanılır.</p>
+<h3 id="2-nosql-veritabanları">2. NoSQL Veritabanları<a class="anchor" href="#2-nosql-veritabanları">#</a></h3>
+<p>NoSQL veritabanları, yapısal olmayan veya esnek veri organizasyonuna sahip veritabanlarıdır. Belge tabanlı, anahtar-değer çiftleri, grafik veya geniş sütunlu veritabanları olarak sınıflandırılabilir. Bu veritabanları esnek yapısı nedeniyle büyük ve çeşitli verilerle çalışmak için uygundur.</p>
+<p><strong>NoSQL Veritabanı Şema ve Sorgu Örneği</strong></p>
+<p>Bir NoSQL örneği olarak MongoDB’de bir ürün koleksiyonu ve buna bağlı bir sorgu:</p>
+<pre><code class="language-JSON">[{
+  &quot;_id&quot;: &quot;1&quot;,
+  &quot;name&quot;: &quot;Laptop&quot;,
+  &quot;price&quot;: 1200,
+  &quot;stock&quot;: 30,
+  &quot;category&quot;: &quot;electronics&quot;
+},
+{
+  &quot;_id&quot;: &quot;1&quot;,
+  &quot;name&quot;: &quot;Laptop&quot;,
+  &quot;price&quot;: 1200,
+  &quot;stock&quot;: 30,
+}]
+</code></pre>
+<blockquote>
+<p>Her döküman her anahtara sahip olmak zorunda değil, ilişkisel veritabanlarında tablolar ve sütunlar sabit ve her satır tüm sütunlar için bir bilgi alanına sahiptir. Bu alanlar boş olsa bile ilişkisel veritabanları veriyi aynı yapıda saklar. Ancak burada durum değişebilir, örneğin <code>category</code> alanı sadece belirli ürünlerde olabilir.</p>
+</blockquote>
+<pre><code class="language-javascript">// Fiyatı 1000’den büyük olan ürünleri getir
+db.products.find({ price: { $gt: 1000 } });
+</code></pre>
+<p>NoSQL veritabanları, hızlı erişim ve yatay ölçeklenebilirlik gerektiren büyük verilerle çalışmak için idealdir.</p>
+<h2 id="veritabanına-erişim">Veritabanına Erişim<a class="anchor" href="#veritabanına-erişim">#</a></h2>
+<p>Veritabanlarına erişim, sunucu yapılandırmasına ve veritabanı türüne göre farklı şekillerde yapılabilir. Genel olarak iki ana veritabanı erişim türü vardır: <strong>lokal</strong> veritabanları ve <strong>ağa bağlı</strong> (networked) veritabanları.</p>
+<h3 id="lokal-veritabanları">Lokal Veritabanları<a class="anchor" href="#lokal-veritabanları">#</a></h3>
+<p>Lokal veritabanları, doğrudan cihaz üzerinde çalışan ve bir ağ aracılığıyla erişimi olmayan veritabanlarıdır. Bu tür veritabanları, özellikle mobil uygulamalarda veya küçük çaplı projelerde, veriye çevrimdışı erişim sağlamak için kullanılır. Uygulamanın bir internet erişimi olsa bile kısa süreli senkronizasyon işlemleri için anlık veritabanları oluşturulup işlem tamamlandıktan sonra kaldırılabilmektedir. Örneğin, SQLite tek bir dosya üzerinde işlem yaparak çalışan hızlı ve oldukça kapasiteli bir veritabanı uygulamasıdır. Mobil uygulamanızda kullanmak için cihaz üzerinde bir sqlite veritabanı oluşturup uygulama verilerinizi kontrol edebilirsiniz.</p>
+<h3 id="ağa-bağlı-veritabanları">Ağa Bağlı Veritabanları<a class="anchor" href="#ağa-bağlı-veritabanları">#</a></h3>
+<p>Ağa bağlı veritabanları, istemcilerin uzaktaki bir sunucu üzerinden veritabanına erişmesini sağlar. Bu tür veritabanları, web uygulamaları ve daha büyük projelerde yaygındır. İstemciler veritabanı sunucusuna API’ler veya doğrudan bağlantılar aracılığıyla erişerek verilere ulaşır veya veri ekler. Örneğin PostgreSQL ve MySQL gibi çok bilinen veritabanları varsayılan olarak kuruldukları bilgisayar üstünde bir port üzerinden erişilebilir hale geliyorlar. Bunu lokal olarak veya ağ üzerinde kullanmak tabi ki sizin tercihinizde.</p>
+<h2 id="veritabanı-ölçekleme">Veritabanı Ölçekleme<a class="anchor" href="#veritabanı-ölçekleme">#</a></h2>
+<p>Bir veritabanına erişim sayısı veya veri miktarı arttığında, veritabanının performansını korumak için ölçekleme yöntemlerine başvurulması gerekir. Bu tür durumlarda genellikle iki tip ölçeklemeden bahsedebiliriz, aslında bu ölçeklemeler sadece veritabanları için değil tüm sunucu tipleri için düşünülebilir.</p>
+<h3 id="1-dikey-ölçekleme-vertical-scaling">1. Dikey Ölçekleme (Vertical Scaling)<a class="anchor" href="#1-dikey-ölçekleme-vertical-scaling">#</a></h3>
+<p>Dikey ölçekleme, veritabanı sunucusunun daha güçlü bir donanımla güncellenmesini içerir. CPU, RAM veya depolama kapasitesi arttırılarak mevcut sunucunun performansı yükseltilir. Ancak, dikey ölçeklemenin bir sınırı vardır; belirli bir donanım seviyesinin üzerine çıkmak maliyetli veya mümkün olmayabilir.</p>
+<h3 id="2-yatay-ölçekleme-horizontal-scaling">2. Yatay Ölçekleme (Horizontal Scaling)<a class="anchor" href="#2-yatay-ölçekleme-horizontal-scaling">#</a></h3>
+<p>Yatay ölçekleme, veritabanını birden çok sunucuya dağıtarak yapılır. Veritabanı, veri parçaları halinde farklı sunucularda tutulur. Bu sayede daha fazla bağlantı ve veri yükü dağıtılabilir. Yatay ölçekleme, NoSQL veritabanlarında daha yaygındır çünkü veri kolayca parçalanabilir.</p>
+<hr>
+<p>Her ölçekleme yönteminin getirdiği avantajlar ve dezavantajlar vardır. Örneğin dikine ölçekleme fiziki olarak mümkün olmayabilir, anakart üzerinde yeterli slot olmayabilir diğer donanım aygıtlarının limitleri size engel teşkil edebilir. Dikey ölçekleme fiziksel olarak mümkün iken sunucuyu yeniden başlatma gibi bir zorunluluk olabilir, hizmet kesintisinin mümkün olmadığı durumlarda bu problem çıkaracaktır.</p>
+<p>Yatay ölçeklemede fiziki olarak bir sınır olmasa da yükü dağıtmak yeni problemlere yol açacaktır. Örneğin veritabanını iki farklı sunucuda çalıştırdığınızda verinizi senkronize etmek için yöntemler bulmak zorundasınız. Veya iki sunucuya yükü dağıtmak için bir başka sunucuya da ihtiyacınız olacak. Üstelik birden fazla sunucunun aynı anda çalıştığı durumlarda bir yada birden fazla sunucunun servis dışı kalması yine uygulamanızda problemlere yol açabilir.</p>
+<h2 id="veritabanlarında-acid-prensipleri">Veritabanlarında ACID Prensipleri<a class="anchor" href="#veritabanlarında-acid-prensipleri">#</a></h2>
+<p>ACID prensipleri, veritabanı sistemlerinde veri bütünlüğünü sağlamak için kullanılan dört temel ilkeden oluşur: <strong>Atomiklik, Tutarlılık, Yalıtım ve Dayanıklılık</strong>. Bu prensipler, özellikle SQL veritabanlarında veri güvenilirliğini korumak için yaygın olarak uygulanır; ancak bazı SQL veritabanları, performans veya esneklik gereksinimleri nedeniyle bu prensiplerin tamamını tam olarak desteklemeyebilir.</p>
+<p>Her bir prensibi ve örneklerini inceleyelim:</p>
+<h3 id="1-atomiklik-atomicity">1. Atomiklik (Atomicity)<a class="anchor" href="#1-atomiklik-atomicity">#</a></h3>
+<p>Atomiklik, bir işlemdeki tüm adımların ya tamamen başarılı olması ya da hiç yapılmamış olması gerektiğini ifade eder. Örneğin, bir banka işleminde bir hesaptan para çekilip diğer hesaba yatırılıyorsa, her iki adımın da başarılı olması gerekir. Aksi takdirde, işlem geri alınarak her iki hesabın bakiyesi de ilk durumuna döndürülür.</p>
+<p><strong>Örnek:</strong> Bir SQL işlemi, Alice’in hesabından 100 TL çekip Bob’un hesabına yatırıyorsa, işlem sırasında hata olursa 100 TL&rsquo;nin Alice’in hesabından çıkıp Bob’a ulaşmaması sağlanır:</p>
+<pre><code class="language-sql">BEGIN;
+UPDATE accounts SET balance = balance - 100 WHERE user = 'Alice';
+UPDATE accounts SET balance = balance + 100 WHERE user = 'Bob';
+COMMIT;
+</code></pre>
+<p>Eğer herhangi bir adım başarısız olursa, ROLLBACK komutuyla işlem geri alınır ve veritabanı eski haline döner.</p>
+<h3 id="2-tutarlılık-consistency">2. Tutarlılık (Consistency)<a class="anchor" href="#2-tutarlılık-consistency">#</a></h3>
+<p>Tutarlılık, bir işlem tamamlandığında veritabanının belirli kurallar çerçevesinde kalması gerektiğini ifade eder. Bu prensip, işlem öncesi ve sonrası veritabanının tanımlanan kısıtlamalara uygun olmasını sağlar. Örneğin, negatif bir bakiye değeri veya yanlış bir referans içeren veri eklenemez.</p>
+<p><strong>Örnek:</strong> Bir sipariş tablosunda, quantity alanı her zaman sıfırdan büyük olmalıdır. Bu tür bir kısıtlama varsa, tutarlılık prensibi veritabanını hatalı verilerden korur.</p>
+<pre><code class="language-sql">ALTER TABLE orders ADD CONSTRAINT positive_quantity CHECK (quantity &gt; 0);
+</code></pre>
+<p>Bu kısıtlama sayesinde, eğer bir işlem negatif miktarda sipariş eklemeye çalışırsa, veritabanı bunu engelleyerek tutarlılığı korur.</p>
+<h3 id="3-yalıtım-isolation">3. Yalıtım (Isolation)<a class="anchor" href="#3-yalıtım-isolation">#</a></h3>
+<p>Yalıtım, aynı anda çalışan işlemlerin birbirini etkilememesini sağlar. Bir işlem tamamlanmadan diğer işlemler tarafından görülmemelidir. Bu prensip sayesinde, eşzamanlı işlemler veritabanının tutarlılığını bozmaz. Yalıtım seviyesi, veritabanı tarafından belirlenen farklı düzeylerde uygulanabilir (örneğin, read uncommitted, read committed, repeatable read, serializable).</p>
+<p><strong>Örnek:</strong> Aynı anda iki kullanıcı bir ürünün stok bilgisini güncelliyorsa, bir kullanıcı işlemi tamamlamadan diğer kullanıcı işlemi görmemelidir.</p>
+<pre><code class="language-sql">BEGIN TRANSACTION;
+UPDATE inventory SET stock = stock - 1 WHERE product_id = 123;
+-- Başka işlemler bu güncellemeyi görmez
+COMMIT;
+</code></pre>
+<p>Burada, işlem tamamlanmadan diğer kullanıcılar stoktaki güncellemeyi göremez.</p>
+<h3 id="4-dayanıklılık-durability"><strong>4. Dayanıklılık (Durability)</strong><a class="anchor" href="#4-dayanıklılık-durability">#</a></h3>
+<p>Dayanıklılık, bir işlem başarıyla tamamlandıktan sonra sonuçların kalıcı olması gerektiğini ifade eder. Sistemde bir arıza veya güç kesintisi olsa bile, başarıyla tamamlanmış işlemler veritabanında saklanır.</p>
+<p><strong>Örnek:</strong> Kullanıcıya başarı mesajı gösterildikten sonra, işlem kalıcı olarak diske yazılır ve sistem kapanıp tekrar açıldığında veri kaybı yaşanmaz.</p>
+<pre><code class="language-sql">BEGIN;
+INSERT INTO orders (user_id, product_id, quantity) VALUES (1, 123, 2);
+COMMIT;
+-- İşlem tamamlandıktan sonra veriler kalıcıdır
+</code></pre>
+<p>Bir güç kesintisi veya sistem çökmesi olsa bile, COMMIT işleminden sonra bu sipariş kaydı veritabanında kalıcı olarak saklanır.</p>
+<h3 id="acid-prensiplerinin-uygulanması"><strong>ACID Prensiplerinin Uygulanması</strong><a class="anchor" href="#acid-prensiplerinin-uygulanması">#</a></h3>
+<p>ACID prensipleri, veritabanının güvenilir ve tutarlı çalışmasını sağlasa da her veritabanı bu prensiplerin tamamını sağlamak zorunda değildir. Örneğin, <strong>SQLite</strong> gibi hafif veritabanları belirli durumlarda dayanıklılık konusunda esneklik gösterebilir. <strong>MySQL</strong>’de ise kullanılan depolama motoruna göre (InnoDB veya MyISAM gibi) ACID uyumluluğu değişebilir.</p>
+<p>Sonuç olarak, ACID prensipleri özellikle veri güvenliği ve tutarlılığın kritik olduğu projeler için tercih edilirken, performans veya esneklik öncelikli durumlarda bazı prensiplerden ödün verilebilir.</p>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://ugursogukpinar.com/tags/backend/">backend</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://ugursogukpinar.com/tags/database/">database</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://ugursogukpinar.com/blog/backend-series/7-versiyon-kontrol-sistemleri/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Versiyon Kontrol Sistemi Nedir? Hangi Problemleri Çözer?</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/ugursogukpinar"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:me@ugursogukpinar.com"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://ugursogukpinar.com/svg/email.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2024</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+           <div class="toc-post-title">Veritabanları (Databases)</div> 
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#veritabanı-türleri">Veritabanı Türleri</a>
+      <ul>
+        <li><a href="#1-sql-veritabanları">1. SQL Veritabanları</a></li>
+        <li><a href="#2-nosql-veritabanları">2. NoSQL Veritabanları</a></li>
+      </ul>
+    </li>
+    <li><a href="#veritabanına-erişim">Veritabanına Erişim</a>
+      <ul>
+        <li><a href="#lokal-veritabanları">Lokal Veritabanları</a></li>
+        <li><a href="#ağa-bağlı-veritabanları">Ağa Bağlı Veritabanları</a></li>
+      </ul>
+    </li>
+    <li><a href="#veritabanı-ölçekleme">Veritabanı Ölçekleme</a>
+      <ul>
+        <li><a href="#1-dikey-ölçekleme-vertical-scaling">1. Dikey Ölçekleme (Vertical Scaling)</a></li>
+        <li><a href="#2-yatay-ölçekleme-horizontal-scaling">2. Yatay Ölçekleme (Horizontal Scaling)</a></li>
+      </ul>
+    </li>
+    <li><a href="#veritabanlarında-acid-prensipleri">Veritabanlarında ACID Prensipleri</a>
+      <ul>
+        <li><a href="#1-atomiklik-atomicity">1. Atomiklik (Atomicity)</a></li>
+        <li><a href="#2-tutarlılık-consistency">2. Tutarlılık (Consistency)</a></li>
+        <li><a href="#3-yalıtım-isolation">3. Yalıtım (Isolation)</a></li>
+        <li><a href="#4-dayanıklılık-durability"><strong>4. Dayanıklılık (Durability)</strong></a></li>
+        <li><a href="#acid-prensiplerinin-uygulanması"><strong>ACID Prensiplerinin Uygulanması</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

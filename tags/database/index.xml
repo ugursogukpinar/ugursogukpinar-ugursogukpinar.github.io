@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on ugursogukpinar</title>
+    <link>https://ugursogukpinar.com/tags/database/</link>
+    <description>Recent content in Database on ugursogukpinar</description>
+    <generator>Hugo</generator>
+    <language>tr-TR</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Thu, 07 Nov 2024 13:40:59 +0300</lastBuildDate>
+    <atom:link href="https://ugursogukpinar.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Veritabanları (Databases)</title>
+      <link>https://ugursogukpinar.com/blog/backend-series/8-veritabanlari/</link>
+      <pubDate>Thu, 07 Nov 2024 13:40:59 +0300</pubDate>
+      <guid>https://ugursogukpinar.com/blog/backend-series/8-veritabanlari/</guid>
+      <description>&lt;p&gt;Bir yazılım projesinde, verileri organize bir şekilde saklayarak gerektiğinde bu verilere ulaşmak için veritabanları kullanılır. Veritabanları, verilerin güvenilir bir şekilde tutulmasını sağlarken veri erişimini hızlandırır ve verilerin güvenliğini sağlar. Peki, veritabanları nasıl çalışır ve hangi türleri vardır?&lt;/p&gt;&#xA;&lt;h2 id=&#34;veritabanı-türleri&#34;&gt;Veritabanı Türleri&lt;/h2&gt;&#xA;&lt;p&gt;Veritabanları genel olarak &lt;strong&gt;SQL&lt;/strong&gt; (yapısal) ve &lt;strong&gt;NoSQL&lt;/strong&gt; (yapısal olmayan) olmak üzere iki ana türe ayrılır. Bu iki tür arasındaki temel farklar, veri organizasyonu ve sorgulama şekillerinde görülür.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-sql-veritabanları&#34;&gt;1. SQL Veritabanları&lt;/h3&gt;&#xA;&lt;p&gt;SQL veritabanları, verilerin tablo yapısında saklandığı ve &lt;strong&gt;Structured Query Language (SQL)&lt;/strong&gt; ile sorgulandığı ilişkisel veritabanlarıdır. Veriler, satırlar ve sütunlar halinde düzenlenir ve tablolar arasında güçlü ilişkiler kurulur.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
